@@ -1,0 +1,121 @@
+-dontwarn android.support.v4.**
+-dontwarn android.support.v7.**
+-dontwarn bolts.**
+-dontwarn com.bumptech.glide.**
+-dontwarn com.github.**
+-dontwarn com.google.android.gms.**
+-keep class kr.co.brgames.** { static *; }
+
+## --------------------------- Kakao : begin --------------------------- ##
+-dontwarn com.kakao.**
+-keep class com.kakao.** { *; }
+## --------------------------- Kakao : end --------------------------- ##
+
+## --------------------------- Vungle : begin --------------------------- ##
+-dontwarn com.vungle.**
+-keep class com.vungle.** { *; }  # omitted public
+-keep class javax.inject.*
+## --------------------------- Vungle : end --------------------------- ##
+
+## --------------------------- Firebase cloud messaging : begin --------------------------- ##
+-dontwarn com.google.firebase.**
+-keep class com.google.firebase.** { *; }
+## --------------------------- Firebase cloud messaging : end --------------------------- ##
+
+## --------------------------- IGAWorks : begin --------------------------- ##
+##---------------Begin: proguard configuration for Igaworks Common  ----------
+-dontwarn com.igaworks.**
+-keep class com.igaworks.** { *; }
+##---------------End: proguard configuration for Igaworks Common   ----------
+
+##---------------Begin: proguard configuration for Gson  ----------
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+
+# For using GSON @Expose annotation
+-keepattributes *Annotation*
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+-keep class com.igaworks.gson.stream.** { *; }
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.igaworks.adbrix.model.** { *; }
+##---------------End: proguard configuration for Gson  ----------
+## --------------------------- IGAWorks : end --------------------------- ##
+
+## --------------------------- Naver cafe plug : begin --------------------------- ##
+-dontwarn com.naver.glink.android.sdk.**
+-dontwarn com.nhn.android.naverlogin.**
+
+-ignorewarnings
+-keepattributes SourceFile, LineNumberTable, *Annotation*, Signature, EnclosingMethod, InnerClasses, EnclosingMethod, Exceptions
+
+-keep class com.naver.cafe.** { *; }
+-keep interface com.naver.cafe.** { *; }
+-keep class com.huawei.hianalytics.** { *; }
+-keep class com.huawei.updatesdk.** { *; }
+-keep class com.huawei.hms.** { *; }
+-keep class com.huawei.openalliance.ad.** { *; }
+-keep class com.huawei.hms.ads.** { *; }
+-keepclassmembers class com.naver.cafe.** {
+<fields>;
+<methods>;
+}
+
+-keep class com.naver.glink.** { *; }
+-keep interface com.naver.glink.** { *; }
+
+-keep class com.nhn.** { *; }
+-keep interface com.nhn.** { *; }
+
+-keep class com.bumptech.glide.** { *; }
+-keep interface com.bumptech.glide.** { *; }
+
+-keep class com.android.volley.** { *; }
+-keep interface com.android.volley.** {*;}
+
+-keep class com.navercorp.volleyextensions.** { *; }
+-keep interface com.navercorp.volleyextensions.** { *; }
+
+-keep class com.squareup.** { *; }
+-keep interface com.squareup.** { *; }
+
+-keep class com.github.clans.fab.** { *; }
+
+-dontwarn com.nhn.android.neoid.**
+-dontwarn com.navercorp.volleyextensions.volleyer.response.parser.**
+
+##---------------Begin: proguard configuration for Gson  ----------
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+
+# For using GSON @Expose annotation
+-keepattributes *Annotation*
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }
+
+# Prevent proguard from stripping interface information from TypeAdapterFactory,
+# JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+
+-keep class com.google.gson.Gson
+##---------------End: proguard configuration for Gson  ----------
+## --------------------------- Naver cafe plug : end --------------------------- ##
+
+## --------------------------- Facebook : begin --------------------------- ##
+-keep class com.facebook.** { *; }
+## --------------------------- Facebook : end --------------------------- ##
+
+## --------------------------- Onestore : begin --------------------------- ##
+-keep class com.skplanet.** { *; }
+## --------------------------- Onestore : end --------------------------- ##
+
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}

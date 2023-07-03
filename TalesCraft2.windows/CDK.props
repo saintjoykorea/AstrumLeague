@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <CDKDir>..\CDK\</CDKDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(CDKDir)Sources\Platform\windows;$(CDKDir)Sources\Platform\windows\include;$(CDKDir)Sources\Platform\windows\include\pthread;$(CDKDir)Sources\Platform\windows\include\zlib;$(CDKDir)Sources;$(CDKDir)Sources\Audio;$(CDKDir)Sources\Collections;$(CDKDir)Sources\Core;$(CDKDir)Sources\Diagnostics;$(CDKDir)Sources\Graphics;$(CDKDir)Sources\Graphics\Animations;$(CDKDir)Sources\Graphics\Animations\Model;$(CDKDir)Sources\Graphics\Animations\Particle;$(CDKDir)Sources\Graphics\Animations\Particle\Shape;$(CDKDir)Sources\Graphics\Animations\Sprite;$(CDKDir)Sources\Graphics\Animations\Trail;$(CDKDir)Sources\Graphics\Animations\Chain;$(CDKDir)Sources\Graphics\Base;$(CDKDir)Sources\Graphics\Camera;$(CDKDir)Sources\Graphics\Collisions;$(CDKDir)Sources\Graphics\Imaging;$(CDKDir)Sources\Graphics\Light;$(CDKDir)Sources\Graphics\Mesh;$(CDKDir)Sources\Graphics\Shader;$(CDKDir)Sources\Graphics\Supports;$(CDKDir)Sources\Graphics\Supports\Shaders;$(CDKDir)Sources\Interface;$(CDKDir)Sources\IO;$(CDKDir)Sources\Locale;$(CDKDir)Sources\Network;$(CDKDir)Sources\Platform;$(CDKDir)Sources\Security;$(CDKDir)Sources\Utilities;$(CDKDir)Sources\Utilities\include;$(CDKDir)Sources\Utilities\Movements;$(CDKDir)Sources\Utilities\Supports;$(CDKDir)Sources\Build;$(IncludePath)</IncludePath>
+    <LibraryPath>$(CDKDir)Sources\Platform\windows\lib;$(CDKDir)Sources\Platform\windows\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <OutDir>build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>CDK_WINDOWS;NOMINMAX;_USE_MATH_DEFINES;_HAS_STD_BYTE=0;HAVE_STRUCT_TIMESPEC;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4819;4244;4018;4804;4267;4566;4305;4800;4099;26495;26812</DisableSpecificWarnings>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalOptions>/source-charset:utf-8 /execution-charset:utf-8</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link />
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="CDKDir">
+      <Value>$(CDKDir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

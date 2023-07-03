@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E051DCA6-32A8-4703-AEA9-1AD5F7B5B9D0}</ProjectGuid>
+    <RootNamespace>TalesCraft2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="TalesCraft2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="TalesCraft2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="TalesCraft2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="TalesCraft2.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CDK\Sources\CDK.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Application.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Connection\GameRecord.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Connection\PVPGateway.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Animation.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Animations.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Asset.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\AssetDefinition.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\AssetIndex.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\AbilityData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\AnnounceData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\BuffData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\CommandData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\DamageTypeData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\EmoticonData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\ObjectType.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\PingData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\ResourceData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\RuneData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\TerrainData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\GridRenderer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\SurfaceRenderer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\VisionRenderer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\WaterRenderer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\ThemeData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\UnitData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Data\LocaleData.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Common\Sound.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\AnimationEffect.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\Effect.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\LightEffect.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\LineEffect.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\StrokeEffect.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Force\AI.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Force\Force.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Action.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Area.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Event.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\GameAnimation.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Growup.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\IBounds.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Message.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Mission.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Movement.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Navigation.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Speech.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Squad.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Tile.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Valuations.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+AI.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+environment.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+location.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+play.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+settings.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+stream.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+transform.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+ui.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\CommandReturn.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Destination.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\FogBuilding.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\FogResource.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Frame.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Object.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Prop.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Resource.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Spawn+value.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Spawn.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+action.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+buff.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+command.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+trigger.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Camera.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\FPoint.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Grid.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\IPoint.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\NavMesh.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Terrain.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Vision.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Water.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Deck\Card.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Deck\Rune.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Map\MapThumb.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Match\Match.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Match\Party.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\ForceBase.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\UnitBase.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualForce.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualUnit.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\Account.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\Player+override.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\Player.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\User.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\AnimationButton.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\FadeMessageLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\MessageLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\PVPConnectLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\SoundButton.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\SoundLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\WaitingLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\GameLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\GameResultLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\RuneAbilityLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\UnitAbilityLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Menu\DeckLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Menu\LobbyLayer.cpp" />
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Menu\TitleLayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CDK\Sources\CDK.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Application.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Connection\GameRecord.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Connection\GatewayDelegate.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Connection\PVPGateway.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Animation.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Animations.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Asset.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinition.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionAnimation.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionImage.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionSound.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionString.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetIndex.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\AbilityData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\AnnounceData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\BuffData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\CommandData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\DamageTypeData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\EmoticonData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\ObjectType.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\PingData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\ResourceData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\RuneData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\TerrainData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\GridRenderer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\SurfaceRenderer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\VisionRenderer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\WaterRenderer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\ThemeData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\UnitData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Data\LocaleData.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Common\Sound.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\AnimationEffect.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\Effect.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\LightEffect.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\LineEffect.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\StrokeEffect.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Force\AI.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Force\Force.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Action.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Area.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Event.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\GameAnimation.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\GameLayerIndex.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Growup.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\IBounds.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Message.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Mission.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Movement.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Navigation.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Speech.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Squad.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Tile.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Valuations.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Map.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\AbilityValue.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\CommandReturn.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Destination.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Fog.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\FogBuilding.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\FogResource.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Frame.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Object.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\ObjectLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Prop.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Resource.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Spawn.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Unit.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\UnitBaseGame.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Camera.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\FPoint.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Grid.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\IPoint.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\NavMesh.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Terrain.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Vision.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Water.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Deck\Card.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Deck\Rune.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Map\MapThumb.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Match\Match.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Match\Party.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\ForceBase.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\UnitBase.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualForce.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualUnit.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\User\Account.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\User\Player.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\User\User.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\GameConfig.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\GatewayConfig.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\AnimationButton.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\FadeMessageLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\MessageLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\PVPConnectLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\SoundButton.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\SoundLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\WaitingLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\GameLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\GameResultLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\RuneAbilityLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\UnitAbilityLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Menu\DeckLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Menu\LobbyLayer.h" />
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Menu\TitleLayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="..\cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

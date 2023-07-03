@@ -1,0 +1,1 @@
+TalesCraft2.resource.bat x86 Debug

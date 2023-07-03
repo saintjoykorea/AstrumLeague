@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2">
+      <UniqueIdentifier>{1012455b-4386-427d-8459-04f691c92444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Connection">
+      <UniqueIdentifier>{526072cc-145d-41a4-a445-6090fcce8d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Data">
+      <UniqueIdentifier>{f8720ed2-4259-47ac-bef6-c9e7d022fff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element">
+      <UniqueIdentifier>{2cca0090-accd-4056-b42b-aa338b89c693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Interface">
+      <UniqueIdentifier>{f5360e2d-fcaa-415e-abbe-ed357f0768b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Data\Game">
+      <UniqueIdentifier>{b204833c-94a6-4051-992c-8c43560bae07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Common">
+      <UniqueIdentifier>{484c0695-e52a-4553-83fb-2d7ff5a4a72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game">
+      <UniqueIdentifier>{766ebcac-d013-4b93-bde4-999f7be7f62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Menu">
+      <UniqueIdentifier>{fd565972-0cb6-45a7-b7cf-6e6f93362ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Interface\Common">
+      <UniqueIdentifier>{4aec1738-ec64-40eb-b5ca-14e9f9ae3c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Interface\Game">
+      <UniqueIdentifier>{f85c05ea-4e57-4f92-ae26-6df1a37bfa96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Data\Game\Terrain">
+      <UniqueIdentifier>{5fb7c00c-600e-48ac-8623-8303357bfcf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game\Effect">
+      <UniqueIdentifier>{d351261a-3a2b-44e6-b33b-bc57686d95db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game\Force">
+      <UniqueIdentifier>{d16cd4c9-b9f4-468c-850a-32c5e322861d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game\Map">
+      <UniqueIdentifier>{12d38d3f-a2b5-4d02-8cb4-ee061a6f4663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game\Object">
+      <UniqueIdentifier>{a2736476-2653-4fc7-a5f5-a17f86535326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game\Terrain">
+      <UniqueIdentifier>{0a144fc0-fd3a-4419-a5f9-d53b59ae6b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Game\Map\Element">
+      <UniqueIdentifier>{2dc5995c-d07a-4e61-95cd-a385089dc1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Menu\Deck">
+      <UniqueIdentifier>{429ce606-826c-41f8-8050-72fd485959ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Menu\Map">
+      <UniqueIdentifier>{f0894d13-88bc-48bd-8f93-a788f961c6b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Menu\Match">
+      <UniqueIdentifier>{457dcb25-7c0e-46b4-8ae8-7bf8d3593954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Menu\Unit">
+      <UniqueIdentifier>{7598b590-abe6-4f93-a9e5-55bc5328facf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Element\Menu\User">
+      <UniqueIdentifier>{8494e7ab-ab43-4825-97d3-8ab0494db1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="미리 컴파일된 헤더">
+      <UniqueIdentifier>{d2426f59-24d6-4575-a2c6-7a70d7ce1edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TalesCraft2\Interface\Menu">
+      <UniqueIdentifier>{28a9e0da-b217-4b0a-800b-556e261fce3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\TalesCraft2\Sources\Connection\GameRecord.h">
+      <Filter>소스 파일\TalesCraft2\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Connection\GatewayDelegate.h">
+      <Filter>소스 파일\TalesCraft2\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Connection\PVPGateway.h">
+      <Filter>소스 파일\TalesCraft2\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Animation.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Animations.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Asset.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinition.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionAnimation.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionImage.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionSound.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetDefinitionString.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\AssetIndex.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\AbilityData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\BuffData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\CommandData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\DamageTypeData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\ObjectType.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\PingData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\ResourceData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\RuneData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\TerrainData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\UnitData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\GridRenderer.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\SurfaceRenderer.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\WaterRenderer.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Common\Sound.h">
+      <Filter>소스 파일\TalesCraft2\Element\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\AnimationEffect.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\Effect.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\LightEffect.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\LineEffect.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Effect\StrokeEffect.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Force\AI.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Force</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Force\Force.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Force</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Map.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Action.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Area.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Event.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\GameAnimation.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\GameLayerIndex.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Growup.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\IBounds.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Message.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Mission.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Movement.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Navigation.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Speech.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Squad.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Tile.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Valuations.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Camera.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\FPoint.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Grid.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\IPoint.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\NavMesh.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Terrain.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Water.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\AbilityValue.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\CommandReturn.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Destination.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Fog.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\FogBuilding.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\FogResource.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Frame.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Object.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\ObjectLayer.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Prop.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Resource.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Spawn.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\Unit.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Deck\Card.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Deck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Deck\Rune.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Deck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Map\MapThumb.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Match\Match.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Match\Party.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\User\Account.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\User\Player.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\User\User.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\ForceBase.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\UnitBase.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualForce.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualUnit.h">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\AnimationButton.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\FadeMessageLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\MessageLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\PVPConnectLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\SoundButton.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\SoundLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Common\WaitingLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\GameLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Application.h">
+      <Filter>소스 파일\TalesCraft2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\GameConfig.h">
+      <Filter>소스 파일\TalesCraft2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\GatewayConfig.h">
+      <Filter>소스 파일\TalesCraft2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CDK\Sources\CDK.h">
+      <Filter>미리 컴파일된 헤더</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\Terrain\VisionRenderer.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Terrain\Vision.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\LocaleData.h">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Element\Game\Object\UnitBaseGame.h">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\AnnounceData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Menu\DeckLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\GameResultLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\EmoticonData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Data\Game\ThemeData.h">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\RuneAbilityLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Game\UnitAbilityLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Menu\TitleLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TalesCraft2\Sources\Interface\Menu\LobbyLayer.h">
+      <Filter>소스 파일\TalesCraft2\Interface\Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\TalesCraft2\Sources\Connection\GameRecord.cpp">
+      <Filter>소스 파일\TalesCraft2\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Connection\PVPGateway.cpp">
+      <Filter>소스 파일\TalesCraft2\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Animation.cpp">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Animations.cpp">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Asset.cpp">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\AssetDefinition.cpp">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\AssetIndex.cpp">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\AbilityData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\BuffData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\CommandData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\DamageTypeData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\ObjectType.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\PingData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\ResourceData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\RuneData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\TerrainData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\UnitData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\GridRenderer.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\SurfaceRenderer.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\WaterRenderer.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Common\Sound.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\AnimationEffect.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\Effect.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\LightEffect.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\LineEffect.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Effect\StrokeEffect.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Force\AI.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Force</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Force\Force.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Force</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+AI.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+environment.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+location.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+play.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+settings.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+stream.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+transform.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Map+ui.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Action.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Area.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Event.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\GameAnimation.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Growup.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\IBounds.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Message.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Mission.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Movement.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Navigation.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Speech.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Squad.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Tile.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Map\Element\Valuations.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Map\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Camera.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\FPoint.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Grid.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\IPoint.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\NavMesh.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Terrain.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Water.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\CommandReturn.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Destination.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\FogBuilding.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\FogResource.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Frame.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Object.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Prop.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Resource.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Spawn.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Spawn+value.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+action.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+buff.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+command.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Deck\Card.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Deck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Deck\Rune.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Deck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Map\MapThumb.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Match\Match.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Match\Party.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\Account.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\Player.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\Player+override.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\User\User.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\ForceBase.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\UnitBase.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualForce.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Menu\Unit\VirtualUnit.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Menu\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\AnimationButton.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\FadeMessageLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\MessageLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\PVPConnectLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\SoundButton.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\SoundLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Common\WaitingLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\GameLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Application.cpp">
+      <Filter>소스 파일\TalesCraft2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CDK\Sources\CDK.cpp">
+      <Filter>미리 컴파일된 헤더</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\Terrain\VisionRenderer.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Terrain\Vision.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Element\Game\Object\Unit+trigger.cpp">
+      <Filter>소스 파일\TalesCraft2\Element\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\LocaleData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\AnnounceData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Menu\DeckLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\GameResultLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\EmoticonData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Data\Game\ThemeData.cpp">
+      <Filter>소스 파일\TalesCraft2\Data\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\RuneAbilityLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Game\UnitAbilityLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Menu\TitleLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TalesCraft2\Sources\Interface\Menu\LobbyLayer.cpp">
+      <Filter>소스 파일\TalesCraft2\Interface\Menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="..\cpp.hint" />
+  </ItemGroup>
+</Project>

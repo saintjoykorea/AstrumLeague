@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49E0853B-B93C-4752-B993-523DB1821A5C}</ProjectGuid>
+    <RootNamespace>CDK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CDK.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CDK.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CDK.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="CDK.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CDK\Sources\Audio\CSAudio.h" />
+    <ClInclude Include="..\CDK\Sources\Build\pch.h" />
+    <ClInclude Include="..\CDK\Sources\CDK.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSArray.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSData.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSDictionary.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSEntry.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSQueue.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSSet.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSSortedDictionary.h" />
+    <ClInclude Include="..\CDK\Sources\Collections\CSSortedSet.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSAutoreleasePool.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSCharSequence.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSDelegate.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSFixed.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSHandler.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSLock.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSMacro.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSMember.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSObject.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSString.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSTask.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSThread.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSTime.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSTypes.h" />
+    <ClInclude Include="..\CDK\Sources\Core\CSValue.h" />
+    <ClInclude Include="..\CDK\Sources\CSConfig.h" />
+    <ClInclude Include="..\CDK\Sources\Diagnostics\CSDiagnostics.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Chain\CSChain.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimation.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivation.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationEmission.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationLinked.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationMulti.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationRandom.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationLoop.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationParam.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\CSAnimationSubstance.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Model\CSModel.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\CSParticle.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShape.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeBox.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeCircle.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeCone.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeHamisphere.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeRect.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeSphere.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Sprite\CSSprite.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Animations\Trail\CSTrail.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSBlendMode.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSColor.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSColor3.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSConvolution.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSFont.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSMaskingMode.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSMatrix.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSQuaternion.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSRect.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSSize.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSVector2.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSVector3.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSVector4.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSVertex.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Base\CSZRect.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Camera\CSCamera.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Collisions\CSBoundingBox.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Collisions\CSBoundingFrustum.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Collisions\CSBoundingSphere.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Collisions\CSCollision.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Collisions\CSPlane.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Collisions\CSRay.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\CSGraphics+StrokeAlpha.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\CSGraphics.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\CSGraphicsSetting.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\CSResource.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\CSStringDisplay.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Imaging\CSImage.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Imaging\CSRootImage.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Imaging\CSScratch.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Imaging\CSSubImage.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Light\CSLight.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Light\CSMaterial.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Mesh\CSMesh.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Mesh\CSMeshAnimation.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Mesh\CSMeshMaterial.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Mesh\CSMeshNode.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Mesh\CSVertexArray.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Shader\CSProgram.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Shader\CSShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSCharacters.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSGLContextIdentifier.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSGraphicsImpl.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSOpenGL.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSRenderBounds.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSRenderer.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSRenderProgram.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSRenderState.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\CSRenderTarget.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSBlurShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSFillShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSKuwaharaShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSLensShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSPixellateShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSShockwaveShader.h" />
+    <ClInclude Include="..\CDK\Sources\Graphics\Supports\Shaders\CSSwirlShader.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSButton.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSKeyCode.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSLayer.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSLayerContainer.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSLayerTransition.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSListBox.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSPopupCoverLayer.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSScroll.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSScrollPane.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSTextBox.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSTextField.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSTicker.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSTouch.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSVideoView.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSView.h" />
+    <ClInclude Include="..\CDK\Sources\Interface\CSWebView.h" />
+    <ClInclude Include="..\CDK\Sources\IO\CSBuffer+array.h" />
+    <ClInclude Include="..\CDK\Sources\IO\CSBuffer.h" />
+    <ClInclude Include="..\CDK\Sources\IO\CSBytes.h" />
+    <ClInclude Include="..\CDK\Sources\IO\CSLogger.h" />
+    <ClInclude Include="..\CDK\Sources\IO\CSPool.h" />
+    <ClInclude Include="..\CDK\Sources\Locale\CSLocaleString.h" />
+    <ClInclude Include="..\CDK\Sources\Network\CSSocket.h" />
+    <ClInclude Include="..\CDK\Sources\Network\CSURLConnection.h" />
+    <ClInclude Include="..\CDK\Sources\Network\CSURLRequest.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSApplication.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSCrypto.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSDevice.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSEncoder.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSFile.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSFileRawImpl.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSLog.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSMemory.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSRaster.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSScreenBuffer.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSSignal.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSTextFieldBridge.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSURLConnectionBridge.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSURLRequestBridge.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSVideoViewBridge.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\CSViewBridge.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\icu_compat.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSAudioOgg.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSAudioWave.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSDeviceConfig.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSFontImpl.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSTextFieldImpl.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSURLConnectionImpl.h" />
+    <ClInclude Include="..\CDK\Sources\Platform\windows\CSURLRequestImpl.h" />
+    <ClInclude Include="..\CDK\Sources\Security\CSSecret.h" />
+    <ClInclude Include="..\CDK\Sources\Security\CSSecretValue.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSFixedSinLut.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSIAPDelegate.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSJSONArray+array.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSJSONArray.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSJSONObject.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSJSONParser.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSJSONWriter+array.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSJSONWriter.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSMath.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\CSRandom.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\Movements\CSMovement.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\Movements\CSMovementConstant.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\Movements\CSMovementCurve.h" />
+    <ClInclude Include="..\CDK\Sources\Utilities\Movements\CSMovementLinear.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CDK\Sources\Build\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CDK\Sources\Collections\CSData+Base64.cpp" />
+    <ClCompile Include="..\CDK\Sources\Collections\CSData.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSAutoreleasePool.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSCharSequence.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSFixed.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSLock.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSObject.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSString.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSTask.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSThread.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSTime.cpp" />
+    <ClCompile Include="..\CDK\Sources\Core\CSTypes.cpp" />
+    <ClCompile Include="..\CDK\Sources\Diagnostics\CSDiagnostics.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Chain\CSChain.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimation.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivation.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationEmission.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationLinked.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationMulti.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationDerivationRandom.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationLoop.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\CSAnimationSubstance.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Model\CSModel.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\CSParticle.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShape.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeBox.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeCircle.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeCone.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeHamisphere.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeRect.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Particle\Shape\CSParticleShapeSphere.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Sprite\CSSprite.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Animations\Trail\CSTrail.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSColor.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSColor3.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSConvolution.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSFont.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSMatrix+billboard.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSMatrix.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSQuaternion.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSRect.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSSize.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSVector2.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSVector3.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSVector4.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSVertex.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Base\CSZRect.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Camera\CSCamera.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Collisions\CSBoundingBox.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Collisions\CSBoundingFrustum.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Collisions\CSBoundingSphere.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Collisions\CSCollision.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Collisions\CSPlane.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Collisions\CSRay.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+String.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+FX.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+Globalization.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+Image.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+Shape.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+Sprite.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics+StringParam.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphics.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSGraphicsSetting.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\CSStringDisplay.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSImage.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+ASTC.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+Compressed.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+DXT.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+ETC1.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+ETC2.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+Image.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+PVRTC1.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+Raw.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage+Texture.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSRootImage.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSScratch.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Imaging\CSSubImage.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Light\CSLight.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Light\CSMaterial.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Mesh\CSMesh.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Mesh\CSMeshAnimation.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Mesh\CSMeshMaterial.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Mesh\CSMeshNode.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Shader\CSProgram.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Shader\CSShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSCharacters.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSGraphicsImpl.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSOpenGL.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSRenderBounds.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSRenderer.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSRenderProgram.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\CSRenderTarget.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSBlurShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSFillShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSKuwaharaShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSLensShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSPixellateShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSShockwaveShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Graphics\Supports\Shaders\CSSwirlShader.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSButton.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSLayer.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSLayerContainer.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSListBox.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSPopupCoverLayer.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSScroll.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSScrollPane.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSTextBox.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSTextField.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSTicker.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSTouch.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSVideoView.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSView.cpp" />
+    <ClCompile Include="..\CDK\Sources\Interface\CSWebView.cpp" />
+    <ClCompile Include="..\CDK\Sources\IO\CSBuffer.cpp" />
+    <ClCompile Include="..\CDK\Sources\IO\CSBytes.cpp" />
+    <ClCompile Include="..\CDK\Sources\IO\CSLogger.cpp" />
+    <ClCompile Include="..\CDK\Sources\Locale\CSLocaleString.cpp" />
+    <ClCompile Include="..\CDK\Sources\Network\CSSocket.cpp" />
+    <ClCompile Include="..\CDK\Sources\Network\CSURLConnection.cpp" />
+    <ClCompile Include="..\CDK\Sources\Network\CSURLRequest.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\CSApplication.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\CSFileRawImpl.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\CSLog+common.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\CSMemory.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\icu_compat.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSAudio.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSAudioOgg.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSAudioWave.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSCrypto.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSDevice.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSDeviceConfig.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSEncoder.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSFile.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSFontImpl.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSLocalNotification.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSLog.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSRaster.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSSignal.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSTextFieldBridge.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSTextFieldImpl.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSURLConnectionBridge.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSURLConnectionImpl.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSURLRequestBridge.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSURLRequestImpl.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSVideoViewBridge.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\CSWebViewBridge.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\main.cpp" />
+    <ClCompile Include="..\CDK\Sources\Platform\windows\sys\time.cpp" />
+    <ClCompile Include="..\CDK\Sources\Security\CSSecret.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\CSJSONArray.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\CSJSONObject.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\CSJSONParser.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\CSJSONWriter.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\CSMath.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\CSRandom.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\Movements\CSMovement.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\Movements\CSMovementConstant.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\Movements\CSMovementCurve.cpp" />
+    <ClCompile Include="..\CDK\Sources\Utilities\Movements\CSMovementLinear.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\CDK\Sources\Platform\windows\device.cfg" />
+    <None Include=".editorconfig" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
