@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="e739afdb-464f-48c3-b65f-abaf6a28402e" />
+        <pointer name="ip1" destination="4" />
+        <pointer name="ip2" />
+      </triggerUnit>
+      <triggerUnit name="자식여부" annotated="False">
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff">
+              <triggerUnit annotated="False">
+                <asset name="buff" selection="4e2036fc-6be9-4425-b2ad-0ba37cff6669" />
+                <numeric name="stack" value="0" />
+                <selection name="buffed" value="(O)" />
+              </triggerUnit>
+            </list>
+          </triggerUnit>
+        </wrap>
+        <wrap name="count">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="1" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="현재 명령이 끝나면 이전 명령이 계속 처리되게끔 처리한다" />
+        <selection name="source" value="단일 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="8ce2de8d-9466-4816-8c43-065d88cc7334" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="ee4684b4-6704-4733-b5e0-2cbfb1bc70ad" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

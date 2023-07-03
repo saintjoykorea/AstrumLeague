@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-120" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="이동" />
+        <selection name="to" value="액션2" />
+      </triggerUnit>
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="89f54e2e-6479-489d-98cc-d525cc0e5d23" />
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <list name="animation">
+          <triggerUnit annotated="False">
+            <asset name="animation" selection="836b1d4b-bf4e-4b7e-a9c1-7a38bd3f45b4" />
+          </triggerUnit>
+        </list>
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="slot" value="0번 슬롯에 등록하고" />
+      </triggerUnit>
+      <triggerUnit name="종료여부" annotated="False">
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="waiting" value="중지" />
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <numeric name="index" value="3" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="59fc4779-0949-4fa5-8dbb-a81866e6be2f" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="시간" />
+      </triggerUnit>
+      <triggerUnit name="이팩트제거" annotated="False">
+        <selection name="slot" value="0" />
+        <selection name="op" value="중단" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="이동" />
+        <selection name="to" value="이동" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

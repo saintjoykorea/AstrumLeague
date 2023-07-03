@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="3132-636107771285198692-26001" />
+        <tab name="time" format="시간무제한">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="수치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="animation" selection="43b03c04-0e5e-443a-8c86-79de5cefefac" />
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.5" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태2" />
+        <selection name="command" value="상태로 변경" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임표시" annotated="False">
+        <numeric name="index" value="3" />
+        <selection name="display" value="표시" />
+      </triggerUnit>
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="08435637-5058-44b9-867b-9bf29c0b6128" />
+        <tab name="time" format="시간무제한">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="수치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

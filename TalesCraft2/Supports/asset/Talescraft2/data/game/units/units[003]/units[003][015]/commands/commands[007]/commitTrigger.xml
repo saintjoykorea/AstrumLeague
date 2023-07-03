@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="상태여부" annotated="False">
+        <selection name="status" value="상태4" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="커맨드없음" annotated="False" />
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="58a8e8b7-e2d2-4b07-8d65-43ef3f3373de" />
+        <pointer name="ip1" destination="4" />
+        <pointer name="ip2" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="be42bab1-5810-4b21-aa33-ef5032387b65" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

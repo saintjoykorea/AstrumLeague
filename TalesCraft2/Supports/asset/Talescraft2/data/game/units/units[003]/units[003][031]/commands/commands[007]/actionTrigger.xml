@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="생성" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="useResource" value="자원을 소비하지 않고" />
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="10076-636337249007101787-39253" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <numeric name="index" value="3" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="59fc4779-0949-4fa5-8dbb-a81866e6be2f" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="시간" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

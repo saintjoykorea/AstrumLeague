@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="충돌" annotated="False">
+        <selection name="activation" value="비활성화" />
+      </triggerUnit>
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="c890019a-a63b-4a3d-8d18-e908a79e838c" />
+        <pointer name="ip1" destination="11" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="액션2" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/15" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="영역수치조정" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/11" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적,중립" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <selection name="revise" value="체력을 제거한다" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="8b305132-ac5d-4f8f-93a0-56c105dad412" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="attenuation">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.7" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/19" />
+                <asset name="ability" selection="58e9d1b6-4f85-4f70-9928-92b56731b86d" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <numeric name="time" value="0" />
+      </triggerUnit>
+      <triggerUnit name="반복" annotated="False">
+        <wrap name="loop">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="6" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/7" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/16" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="영역수치조정" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/11" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적,중립" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <selection name="revise" value="체력을 제거한다" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="ff47b046-4756-46ec-8e3e-83533e74a9be" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="attenuation">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.7" reference="763b22c8-660b-4d39-9b97-48c4c10eba11/19" />
+                <asset name="ability" selection="58e9d1b6-4f85-4f70-9928-92b56731b86d" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <numeric name="time" value="0" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="3" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="animation" selection="df2421e2-f6b5-4858-984e-71cb2738d3d1" />
+        <selection name="follow" value="타겟의 위치로" />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="모션" annotated="False">
+        <tab name="animation" format="없음">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2.7" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

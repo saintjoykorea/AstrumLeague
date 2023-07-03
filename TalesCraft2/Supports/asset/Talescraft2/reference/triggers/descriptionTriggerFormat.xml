@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerFormatAsset version="44" codeBoundary="UByte" setBoundary="UShort" containerBoundary="UShort">
+  <triggerFormat code="0" name="수치" text="수치:%value% 표시:%display%">
+    <numeric name="value" boundary="Fixed" decimalPlaces="3" min="0" />
+    <selection name="display" boundary="UByte">
+      <item code="0" name="정수" />
+      <item code="1" name="소수" />
+      <item code="2" name="비율" />
+      <item code="3" name="비율변화" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="1" name="능력치" text="능력치:%ability%%target% 표시:%display%">
+    <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+    <tab name="target" codeBoundary="UByte">
+      <triggerFormat name="타겟없음" text="()" />
+      <triggerFormat name="타겟있음" text="(%target%)">
+        <asset name="target" boundary="UShort" depth="1" root="5700-636271087538762629-42620" />
+      </triggerFormat>
+    </tab>
+    <selection name="display" boundary="UByte">
+      <item code="0" name="정수" />
+      <item code="1" name="소수" />
+      <item code="2" name="비율" />
+      <item code="3" name="비율변화" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="2" name="수치와 능력치" text="능력치:%ability%(%value%)%target% 표시:%display%">
+    <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+    <tab name="target" codeBoundary="UByte">
+      <triggerFormat name="타겟없음" text="()" />
+      <triggerFormat name="타겟있음" text="(%target%)">
+        <asset name="target" boundary="UShort" depth="1" root="5700-636271087538762629-42620" />
+      </triggerFormat>
+    </tab>
+    <selection name="display" boundary="UByte">
+      <item code="0" name="정수" />
+      <item code="1" name="소수" />
+      <item code="2" name="비율" />
+      <item code="3" name="비율변화" />
+    </selection>
+    <numeric name="value" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+</triggerFormatAsset>

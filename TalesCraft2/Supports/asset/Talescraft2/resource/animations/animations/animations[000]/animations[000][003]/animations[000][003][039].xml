@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animationAsset version="65" globalPositionIndex="0" globalStartPosition0="0,0,0" globalEndPosition0="0,0,0" globalStartPosition1="0,0,0" globalEndPosition1="0,0,0" globalStartPosition2="0,0,0" globalEndPosition2="0,0,0" color="1" gridSize="40" camera="30,100,100000,0,0,0,42,1333" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" ground="False">
+  <keys>
+    <key name="Position" value="1" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Scale" value="2" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 0" value="4" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 1" value="8" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 2" value="16" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 3" value="32" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 4" value="64" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 5" value="128" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 6" value="256" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 7" value="512" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 8" value="1024" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 9" value="2048" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 10" value="4096" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 11" value="8192" visible="False" layer="None" globalPosition="None" />
+    <key name="Bottom" value="16384" visible="True" layer="Bottom" globalPosition="None" />
+    <key name="Middle" value="32768" visible="True" layer="Middle" globalPosition="None" />
+    <key name="Top" value="65536" visible="True" layer="Top" globalPosition="None" />
+    <key name="Body" value="131072" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Head" value="262144" visible="True" layer="None" globalPosition="Position1" />
+  </keys>
+  <backgrounds />
+  <animation name="이모티콘_하피" keys="Position" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="4" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+    <derivation type="Multi">
+      <animation name="Mask" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="True" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Sprite">
+          <sprite color="0" gridSize="40" fov="30" delay="0.05" loop="0;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+            <spriteLayer name="">
+              <spriteLayerFrame frame="0" status="Independent">
+                <rect frame="-100,-80,200,140" z="0" fill="True" />
+              </spriteLayerFrame>
+            </spriteLayer>
+          </sprite>
+        </substance>
+        <derivation type="Multi">
+          <animation name="Animation" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="4" y="Curve;0,220,0,-3.09097,-3.09097;0.1,18,0,0,0;0.9,18,0,0,0;1,220,0,3.090969,3.090969;20000" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <derivation type="Multi">
+              <animation name="Face" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="1" pathDuration="4" x="Curve;0,-11,0,0,0;0.5599999,-11,0,0,0;0.64,-9,0,0,0;1,-9,0,0,0;20000" y="Curve;0,-6,0,0,0;0.23,-6,0,0,0;0.44,-8,0,0,0;0.5599999,-8,0,6.23332E-06,6.23332E-06;0.64,-6,0,0,0;1,-6,0,0,0;20000" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationZ="Curve;0,0,0,0,0;0.2317074,0,0,0,0;0.437561,-6,0,0,0;0.5599999,-6,0,6.766732E-05,6.766732E-05;0.6441463,12,0,0,0;1,12,0,0,0;14400" rotationFixedComponent="False" rotationDuration="4" rotationLoop="1;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <derivation type="Multi">
+                  <animation name="h" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="1" pathDuration="0" x="Constant;-12.5,0" y="Constant;-17.5,0" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationZ="Curve;0,0,0,0,0;0.1407318,4,0,0,0;0.3217073,1.370158,0,2.138884E-05,2.138884E-05;0.5607315,7,0,0,0;0.8009756,-11.08451,0,-2.999598E-05,-2.999598E-05;1,0,0,0,0;14400" rotationFixedComponent="False" rotationDuration="4" rotationLoop="1;False;False" scaleFixedComponent="False" scaleDuration="0.06" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                    <substance type="Sprite">
+                      <sprite color="0" gridSize="40" fov="30" delay="1" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+                        <spriteLayer name="">
+                          <spriteLayerFrame frame="0" status="Independent">
+                            <image image="b4985b39-25df-4106-956e-39a53f73cc09" position="-1,25,0" halign="Center" valign="Middle" />
+                          </spriteLayerFrame>
+                        </spriteLayer>
+                      </sprite>
+                    </substance>
+                    <derivation type="Multi" />
+                  </animation>
+                </derivation>
+              </animation>
+              <animation name="K1" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" x="Constant;-5,0" y="Constant;28,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Curve;0,1,0,0,0;0.23,1,0,0,0;0.44,1.05,0,0,0;0.5553191,1.05,0,-3.636095E-05,-3.636095E-05;0.64,1,0,0,0;1,1,0,0,0;100" scaleY="Curve;0,1,0,0,0;0.23,1,0,0,0;0.44,1.05,0,0,0;0.5553191,1.05,0,-3.636095E-05,-3.636095E-05;0.64,1,0,0,0;1,1,0,0,0;100" scaleZ="Curve;0,1,0,0,0;0.23,1,0,0,0;0.44,1.05,0,0,0;0.5553191,1.05,0,-3.636095E-05,-3.636095E-05;0.64,1,0,0,0;1,1,0,0,0;100" scaleFixedComponent="False" scaleDuration="4" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Sprite">
+                  <sprite color="0" gridSize="40" fov="30" delay="0.05" loop="0;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+                    <spriteLayer name="">
+                      <spriteLayerFrame frame="0" status="Independent">
+                        <image image="e340ba5f-4a68-4de7-8e79-2fcce8fa06a0" position="0,-13,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                    </spriteLayer>
+                  </sprite>
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="Face" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="1" pathDuration="4" x="Curve;0,-11,0,0,0;0.5599999,-11,0,0,0;0.64,-9,0,0,0;1,-9,0,0,0;20000" y="Curve;0,-6,0,0,0;0.23,-6,0,0,0;0.44,-8,0,0,0;0.5599999,-8,0,7.272206E-06,7.272206E-06;0.64,-6,0,0,0;1,-6,0,0,0;20000" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationZ="Curve;0,0,0,0,0;0.2317074,0,0,0,0;0.437561,-6,0,0,0;0.5599999,-6,0,7.864386E-05,7.864386E-05;0.6441463,12,0,0,0;1,12,0,0,0;14400" rotationFixedComponent="False" rotationDuration="4" rotationLoop="1;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <derivation type="Multi">
+                  <animation name="Face" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="1" pathDuration="0" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="3" rotationLoop="1;False;False" scaleFixedComponent="False" scaleDuration="0.06" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                    <substance type="Sprite">
+                      <sprite color="0" gridSize="40" fov="30" delay="1" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+                        <spriteLayer name="">
+                          <spriteLayerFrame frame="0" status="Independent">
+                            <image image="2da4ca3d-4ac9-4daf-be51-eec2a19aebb2" position="5,-32,0" halign="Center" valign="Middle" />
+                          </spriteLayerFrame>
+                        </spriteLayer>
+                      </sprite>
+                    </substance>
+                    <derivation type="Multi">
+                      <animation name="e" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="1" pathDuration="4" x="Curve;0,2,0,0,0;0.23,2,0,0,0;0.44,3,0,0,0;1,3,0,0,0;20000" y="Curve;0,3,0,0,0;0.23,3,0,0,0;0.4400002,-2,0,0,0;1,-2,0,0,0;20000" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="3" rotationLoop="1;False;False" scaleFixedComponent="False" scaleDuration="0.06" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                        <substance type="Sprite">
+                          <sprite color="0" gridSize="40" fov="30" delay="1" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+                            <spriteLayer name="">
+                              <spriteLayerFrame frame="0" status="Independent">
+                                <image image="ca7d257d-923e-4355-8df4-365fe4d916cc" position="5,-32,0" halign="Center" valign="Middle" />
+                              </spriteLayerFrame>
+                            </spriteLayer>
+                          </sprite>
+                        </substance>
+                        <derivation type="Multi" />
+                      </animation>
+                      <animation name="m" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="1" pathDuration="4" x="Constant;0,0" y="Constant;3,0" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationZ="Constant;2,0" rotationFixedComponent="False" rotationDuration="4" rotationLoop="1;False;False" scaleX="Curve;0,0.5999999,0,0,0;0.23,0.5999999,0,0,0;0.44,1.3,0,0,0;0.5599999,1.297234,0,-0.0001745272,-0.0001745272;0.66,1,0,-6.233294E-05,-6.233294E-05;1,1,0,0,0;100" scaleY="Curve;0,0.5999999,0,0,0;0.23,0.5999999,0,0,0;0.44,1.3,0,0,0;0.5599999,1.297234,0,-0.0001745272,-0.0001745272;0.66,1,0,-6.233294E-05,-6.233294E-05;1,1,0,0,0;100" scaleZ="Curve;0,0.5999999,0,0,0;0.23,0.5999999,0,0,0;0.44,1.3,0,0,0;0.5599999,1.297234,0,-0.0001745272,-0.0001745272;0.66,1,0,-6.233294E-05,-6.233294E-05;1,1,0,0,0;100" scaleFixedComponent="False" scaleDuration="4" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                        <substance type="Sprite">
+                          <sprite color="0" gridSize="40" fov="30" delay="1" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+                            <spriteLayer name="">
+                              <spriteLayerFrame frame="0" status="Independent">
+                                <image image="b78f7969-7ce2-4daf-993e-ca1962372d48" position="-1,-1,0" halign="Center" valign="Middle" />
+                              </spriteLayerFrame>
+                            </spriteLayer>
+                          </sprite>
+                        </substance>
+                        <derivation type="Multi" />
+                      </animation>
+                    </derivation>
+                  </animation>
+                </derivation>
+              </animation>
+              <animation name="Animation" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" x="Constant;-18,0" y="Constant;-66,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="2.8" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="0" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="1.5,0" emissionRate="1000" emissionMax="1" duration="0.2" latency="0" prewarm="True" descent="False" finish="False" clear="False" blendMode="Normal" imageRoot="da5d7fa5-3163-4c32-ba14-5c88db5d25f5" images="648c38be-69ca-441b-8d12-cfcede3c264d" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,1,0,-45,-45;0.6100001,0,0,-0.01370778,-0.01370778;1,0,0,0,0;1" colorFixedComponent="False" y="Curve;0,30,0,0,0;1,0,0,-0.0859436,-0.0859436;20000" rotationFixedComponent="True" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+            </derivation>
+          </animation>
+        </derivation>
+      </animation>
+    </derivation>
+  </animation>
+</animationAsset>

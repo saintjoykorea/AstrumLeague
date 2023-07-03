@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerFormatAsset version="65" codeBoundary="UByte" setBoundary="UShort" containerBoundary="UShort">
+  <items name="status">
+    <item code="0" name="시작" />
+    <item code="1" name="파괴" />
+    <item code="2" name="상태2" />
+    <item code="3" name="상태3" />
+    <item code="4" name="상태4" />
+    <item code="5" name="상태5" />
+    <item code="6" name="상태6" />
+    <item code="7" name="상태7" />
+  </items>
+  <items name="statusMask">
+    <item code="1" name="시작" />
+    <item code="2" name="파괴" />
+    <item code="4" name="상태2" />
+    <item code="8" name="상태3" />
+    <item code="16" name="상태4" />
+    <item code="32" name="상태5" />
+    <item code="64" name="상태6" />
+    <item code="128" name="상태7" />
+  </items>
+  <items name="resource">
+    <item code="0" name="광석" />
+    <item code="1" name="가스" />
+  </items>
+  <items name="type">
+    <item code="0" name="지하" />
+    <item code="1" name="지하장애물" />
+    <item code="2" name="지하크리쳐" />
+    <item code="3" name="지하유닛" />
+    <item code="4" name="지하일꾼" />
+    <item code="5" name="지상" />
+    <item code="6" name="지상장애물" />
+    <item code="7" name="지상크리쳐" />
+    <item code="8" name="지상유닛" />
+    <item code="9" name="지상일꾼" />
+    <item code="12" name="건물" />
+    <item code="13" name="타워" />
+    <item code="14" name="병영" />
+    <item code="15" name="광산" />
+    <item code="16" name="본진" />
+    <item code="21" name="공중" />
+    <item code="22" name="공중장애물" />
+    <item code="23" name="공중크리쳐" />
+    <item code="24" name="공중유닛" />
+    <item code="25" name="공중일꾼" />
+  </items>
+  <items name="typeMask">
+    <item code="8" name="지하유닛" />
+    <item code="16" name="지하일꾼" />
+    <item code="256" name="지상유닛" />
+    <item code="512" name="지상일꾼" />
+    <item code="4096" name="건물" />
+    <item code="8192" name="타워" />
+    <item code="16384" name="병영" />
+    <item code="32768" name="광산" />
+    <item code="65536" name="본진" />
+    <item code="16777216" name="공중유닛" />
+    <item code="33554432" name="공중일꾼" />
+  </items>
+  <items name="attributeMask">
+    <item code="1" name="원거리" />
+    <item code="2" name="근거리" />
+    <item code="4" name="생물" />
+    <item code="8" name="거대" />
+    <item code="16" name="마나" />
+    <item code="32" name="디버프" />
+    <item code="64" name="재사용대기시간" />
+    <item code="128" name="소환수" />
+    <item code="256" name="일반공격" />
+    <item code="512" name="강타공격" />
+    <item code="1024" name="관통공격" />
+    <item code="2048" name="폭발공격" />
+    <item code="4096" name="마법공격" />
+    <item code="65536" name="생체방어" />
+    <item code="131072" name="경갑방어" />
+    <item code="262144" name="중갑방어" />
+    <item code="524288" name="기계" />
+    <item code="1048576" name="건물" />
+  </items>
+  <items name="layer">
+    <item code="0" name="바닥" />
+    <item code="1" name="본체" />
+    <item code="2" name="상단" />
+  </items>
+  <items name="buildingMask">
+    <item code="1" name="완료" />
+    <item code="2" name="예약" />
+    <item code="4" name="목표건설" />
+    <item code="8" name="변형건설" />
+    <item code="16" name="독립건설" />
+    <item code="32" name="의존건설" />
+    <item code="64" name="방치" />
+    <item code="128" name="재개" />
+  </items>
+  <items name="allienceMask">
+    <item code="1" name="적" />
+    <item code="2" name="아군" />
+    <item code="4" name="플레이어" />
+    <item code="8" name="중립" />
+  </items>
+  <items name="activation">
+    <item code="0" name="비활성화" />
+    <item code="1" name="활성화" />
+  </items>
+  <items name="alive">
+    <item code="0" name="덱에 있는" />
+    <item code="1" name="소환된" />
+  </items>
+  <items name="trained">
+    <item code="0" name="덱에 있는" />
+    <item code="1" name="완료된" />
+  </items>
+  <items name="vision">
+    <item code="0" name="모든" />
+    <item code="1" name="시야가 보이는 가까운" />
+  </items>
+  <items name="rewindMotion">
+    <item code="0" name="반복" />
+    <item code="1" name="단일" />
+  </items>
+  <items name="baseMotion">
+    <item code="0" name="정지" />
+    <item code="1" name="파괴" />
+    <item code="2" name="이동" />
+    <item code="3" name="액션1" />
+    <item code="4" name="액션2" />
+    <item code="5" name="액션3" />
+    <item code="6" name="액션4" />
+    <item code="7" name="액션5" />
+    <item code="8" name="액션6" />
+    <item code="9" name="액션7" />
+    <item code="10" name="액션8" />
+    <item code="11" name="액션9" />
+  </items>
+  <items name="use">
+    <item code="1" name="사용하여" />
+    <item code="0" name="사용하지 않고" />
+  </items>
+  <items name="follow">
+    <item code="0" name="타겟의 위치로" />
+    <item code="1" name="타겟에 붙여서 " />
+  </items>
+  <items name="dir">
+    <item code="0" name="0" />
+    <item code="1" name="1" />
+    <item code="2" name="2" />
+    <item code="3" name="3" />
+    <item code="4" name="4" />
+    <item code="5" name="5" />
+    <item code="6" name="6" />
+    <item code="7" name="7" />
+    <item code="8" name="8" />
+    <item code="9" name="9" />
+    <item code="10" name="10" />
+    <item code="11" name="11" />
+    <item code="12" name="타겟" />
+    <item code="13" name="시계" />
+    <item code="14" name="반시계" />
+  </items>
+  <items name="waiting">
+    <item code="0" name="계속" />
+    <item code="1" name="중지" />
+  </items>
+  <items name="attach">
+    <item code="0" name="중립" />
+    <item code="1" name="아군" />
+  </items>
+  <items name="pushing">
+    <item code="0" name="끌어들인다" />
+    <item code="1" name="밀쳐낸다" />
+  </items>
+  <items name="freezing">
+    <item code="1" name="정지시킨다" />
+    <item code="0" name="정지시키지 않는다" />
+  </items>
+  <items name="toTargetSingle">
+    <item code="0" name="자신" />
+    <item code="1" name="타겟" />
+  </items>
+  <items name="toTargetArea">
+    <item code="0" name="자신" />
+    <item code="1" name="타겟" />
+    <item code="2" name="타겟과 가까운 지점" />
+  </items>
+  <items name="nearby">
+    <item code="0" name="가운데" />
+    <item code="1" name="가까운" />
+  </items>
+  <items name="compare">
+    <item code="0" name="남은 체력이 클 경우" />
+    <item code="1" name="남은 체력이 최대치 * 수치보다 클 경우" />
+    <item code="2" name="남은 체력이 작을 경우" />
+    <item code="3" name="남은 체력이 최대치 * 수치보다 작을 경우" />
+    <item code="4" name="남은 마나가 클 경우" />
+    <item code="5" name="남은 마나가 최대치 * 수치보다 클 경우" />
+    <item code="6" name="남은 마나가 작을 경우" />
+    <item code="7" name="남은 마나가 최대치 * 수치보다 작을 경우" />
+    <item code="8" name="남은 광석이 클 경우" />
+    <item code="9" name="남은 가스가 클 경우" />
+  </items>
+  <items name="revise">
+    <item code="0" name="체력을 회복한다" />
+    <item code="1" name="체력을 제거한다" />
+    <item code="2" name="실드를 회복한다" />
+    <item code="3" name="실드를 제거한다" />
+    <item code="4" name="마나를 회복한다" />
+    <item code="5" name="마나를 제거한다" />
+    <item code="6" name="광석을 획득한다" />
+    <item code="7" name="광석을 소모한다" />
+    <item code="8" name="가스를 획득한다" />
+    <item code="9" name="가스를 소모한다" />
+  </items>
+  <items name="commandEffectMask">
+    <item code="1" name="연결선(플레이어)" />
+    <item code="2" name="연결선(아군)" />
+    <item code="4" name="연결선(적)" />
+    <item code="8" name="연결선(중립)" />
+    <item code="16" name="스트로크" />
+    <item code="32" name="블링크" />
+  </items>
+  <items name="announce">
+    <item code="-1" name="없음" />
+    <item code="0" name="게임시작" />
+    <item code="1" name="광석부족" />
+    <item code="2" name="가스부족" />
+    <item code="3" name="마나부족" />
+    <item code="4" name="광석고갈" />
+    <item code="5" name="가스고갈" />
+    <item code="6" name="건설불가" />
+    <item code="7" name="건설중단" />
+    <item code="8" name="기지완성" />
+    <item code="9" name="업그레이드완료" />
+    <item code="10" name="적스킬감지" />
+    <item code="11" name="아군기지공격" />
+    <item code="12" name="아군병력공격" />
+    <item code="13" name="동맹기지공격" />
+    <item code="14" name="동맹공격" />
+  </items>
+  <wrap name="targetCondition">
+    <triggerFormat code="0" name="타겟조건" text="($exclusion$자신:%exclusion% $$alive$생존:%alive% $$unit$유닛:%unit% $$type$타입:%type% $$attribute$특성포함:%attribute% $$attributeExclusion$특성제외:%attributeExclusion% $$level$레벨:%level% $$compare$비교:%compare% $$allience$진영:%allience% $$status$상태:%status% $$building$건설상태:%building% $$etc$기타상태:%etc% $$buff$버프:%buff%$)">
+      <selection name="exclusion" boundary="UByte">
+        <item code="0" name="포함" />
+        <item code="1" name="제외" />
+      </selection>
+      <selection name="alive" boundary="UByte">
+        <item code="1" name="(O)" />
+        <item code="0" name="(X)" />
+        <item code="2" name="무관" />
+      </selection>
+      <list name="unit">
+        <triggerFormat name="유닛" text="%unit% %equal%">
+          <asset name="unit" boundary="UShort" depth="2" root="9932-635399139943365120-2" />
+          <selection name="equal" boundary="UByte">
+            <item code="1" name="(O)" />
+            <item code="0" name="(X)" />
+          </selection>
+        </triggerFormat>
+      </list>
+      <mask name="type" boundary="UInt" items="typeMask" />
+      <mask name="attribute" boundary="UInt" items="attributeMask" />
+      <mask name="attributeExclusion" boundary="UInt" items="attributeMask" />
+      <tab name="compare" codeBoundary="UByte">
+        <triggerFormat name="비교없음" text="없음" />
+        <triggerFormat name="비교적용" text="%value%값으로 %compare%">
+          <selection name="compare" boundary="UByte" items="compare" />
+          <numeric name="value" boundary="Fixed" decimalPlaces="3" />
+        </triggerFormat>
+      </tab>
+      <mask name="allience" boundary="UByte" items="allienceMask" />
+      <mask name="status" boundary="UByte" items="statusMask" />
+      <mask name="building" boundary="UByte" items="buildingMask" />
+      <mask name="etc" boundary="UInt">
+        <item code="1" name="시야(0)" />
+        <item code="2" name="시야(X)" />
+        <item code="4" name="은폐(0)" />
+        <item code="8" name="은폐(X)" />
+        <item code="16" name="소환(0)" />
+        <item code="32" name="소환(X)" />
+        <item code="64" name="연구(0)" />
+        <item code="128" name="연구(X)" />
+        <item code="256" name="수송(0)" />
+        <item code="512" name="수송(X)" />
+        <item code="1024" name="도달(0)" />
+        <item code="2048" name="도달(X)" />
+        <item code="20480" name="광석채취(0)" />
+        <item code="24576" name="가스채취(0)" />
+        <item code="28672" name="자원채취(0)" />
+        <item code="16384" name="자원채취(X)" />
+      </mask>
+      <list name="buff">
+        <triggerFormat name="버프" text="%buff% (%stack%스택) %buffed%">
+          <asset name="buff" boundary="UShort" depth="2" root="9932-635399139943385121-67" />
+          <numeric name="stack" boundary="Fixed" decimalPlaces="3" min="0" />
+          <selection name="buffed" boundary="UByte">
+            <item code="1" name="(O)" />
+            <item code="0" name="(X)" />
+          </selection>
+        </triggerFormat>
+      </list>
+    </triggerFormat>
+  </wrap>
+  <wrap name="varFixedRate">
+    <triggerFormat code="0" name="var" text="%value%">
+      <tab name="value" codeBoundary="UByte">
+        <triggerFormat name="입력값" text="%value%">
+          <numeric name="value" boundary="Fixed" decimalPlaces="3" min="0" value="1" />
+        </triggerFormat>
+        <triggerFormat name="능력치" text="%ability%">
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+        <triggerFormat name="입력값과 능력치" text="%ability%(%value%)">
+          <numeric name="value" boundary="Fixed" decimalPlaces="3" min="0" value="1" />
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+      </tab>
+    </triggerFormat>
+  </wrap>
+  <wrap name="varFixed">
+    <triggerFormat code="0" name="var" text="%value%">
+      <tab name="value" codeBoundary="UByte">
+        <triggerFormat name="입력값" text="%value%">
+          <numeric name="value" boundary="Fixed" decimalPlaces="3" min="0" />
+        </triggerFormat>
+        <triggerFormat name="능력치" text="%ability%">
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+        <triggerFormat name="입력값과 능력치" text="%ability%(%value%)">
+          <numeric name="value" boundary="Fixed" decimalPlaces="3" min="0" />
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+      </tab>
+    </triggerFormat>
+  </wrap>
+  <wrap name="varFloatRate">
+    <triggerFormat code="0" name="var" text="%value%">
+      <tab name="value" codeBoundary="UByte">
+        <triggerFormat name="입력값" text="%value%">
+          <numeric name="value" boundary="Float" decimalPlaces="3" min="0" value="1" />
+        </triggerFormat>
+        <triggerFormat name="능력치" text="%ability%">
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+        <triggerFormat name="입력값과 능력치" text="%ability%(%value%)">
+          <numeric name="value" boundary="Float" decimalPlaces="3" min="0" value="1" />
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+      </tab>
+    </triggerFormat>
+  </wrap>
+  <wrap name="varFloat">
+    <triggerFormat code="0" name="var" text="%value%">
+      <tab name="value" codeBoundary="UByte">
+        <triggerFormat name="입력값" text="%value%">
+          <numeric name="value" boundary="Float" decimalPlaces="3" min="0" />
+        </triggerFormat>
+        <triggerFormat name="능력치" text="%ability%">
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+        <triggerFormat name="입력값과 능력치" text="%ability%(%value%)">
+          <numeric name="value" boundary="Float" decimalPlaces="3" min="0" />
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+      </tab>
+    </triggerFormat>
+  </wrap>
+  <wrap name="varByte">
+    <triggerFormat code="0" name="var" text="%value%">
+      <tab name="value" codeBoundary="UByte">
+        <triggerFormat name="입력값" text="%value%">
+          <numeric name="value" boundary="UByte" />
+        </triggerFormat>
+        <triggerFormat name="능력치" text="%ability%">
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+        <triggerFormat name="입력값과 능력치" text="%ability%(%value%)">
+          <numeric name="value" boundary="UByte" />
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+      </tab>
+    </triggerFormat>
+  </wrap>
+  <wrap name="varShort">
+    <triggerFormat code="0" name="var" text="%value%">
+      <tab name="value" codeBoundary="UByte">
+        <triggerFormat name="입력값" text="%value%">
+          <numeric name="value" boundary="UShort" />
+        </triggerFormat>
+        <triggerFormat name="능력치" text="%ability%">
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+        <triggerFormat name="입력값과 능력치" text="%ability%(%value%)">
+          <numeric name="value" boundary="UShort" />
+          <asset name="ability" boundary="UShort" depth="1" root="4068-635405901275117453-1369" />
+        </triggerFormat>
+      </tab>
+    </triggerFormat>
+  </wrap>
+  <triggerFormat code="0" name="이팩트" text="%animation% 이팩트를 %follow% 출력한다.">
+    <asset name="animation" boundary="UShort" depth="3" root="9932-635399139943385121-75" />
+    <selection name="follow" boundary="UByte" items="follow" />
+  </triggerFormat>
+  <triggerFormat code="1" name="영역이팩트" text="%range%범위에 %targetCondition%조건에 맞는 타겟들에게 %animation% %ui%이팩트를 %nearby%지점에 %follow% 출력한다.">
+    <selection name="nearby" boundary="UByte" items="nearby" />
+    <wrap name="range" wrap="varFixed" />
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <asset name="animation" boundary="UShort" depth="3" root="9932-635399139943385121-75" />
+    <selection name="follow" boundary="UByte" items="follow" />
+    <selection name="ui" boundary="UByte">
+      <item code="0" name="일반" />
+      <item code="1" name="UI" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="2" name="전역이팩트" text="%targetCondition%조건에 맞는 타겟들에게 %animation%이팩트를 %follow% 출력한다.">
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <asset name="animation" boundary="UShort" depth="3" root="9932-635399139943385121-75" />
+    <selection name="follow" boundary="UByte" items="follow" />
+  </triggerFormat>
+  <triggerFormat code="3" name="공격" text="공격력의 %rate%비율로 %time%의 중복금지시간으로 공격한다.">
+    <wrap name="rate" wrap="varFixedRate" />
+    <numeric name="time" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+  <triggerFormat code="4" name="영역공격" text="%range%범위에 %targetCondition%조건에 맞는 타겟들에게 공격력의 %rate%비율과 %attenuation%감쇠로 %time%의 중복금지시간으로 공격한다.">
+    <wrap name="range" wrap="varFixed" />
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <wrap name="rate" wrap="varFixedRate" />
+    <wrap name="attenuation" wrap="varFixedRate" />
+    <numeric name="time" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+  <triggerFormat code="5" name="전역공격" text="%targetCondition%조건에 맞는 타겟들에게 공격력의 %rate%비율로 %time%의 중복금지시간으로 공격한다.">
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <wrap name="rate" wrap="varFixedRate" />
+    <numeric name="time" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+  <triggerFormat code="6" name="수치비교" text="%value%값보다 %compare% 다음 트리거, 아닐 경우 %ip1%으로 이동한다.">
+    <selection name="compare" boundary="UByte" items="compare" />
+    <wrap name="value" wrap="varFixed" />
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="7" name="수치조정" text="%value%만큼 %time%의 중복금지시간으로 %revise%.">
+    <selection name="revise" boundary="UByte" items="revise" />
+    <wrap name="value" wrap="varFixed" />
+    <numeric name="time" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+  <triggerFormat code="8" name="영역수치조정" text="%range%범위에 %targetCondition%조건에 맞는 타겟들에게 %value%만큼과 %attenuation%감쇠로 %time%의 중복금지시간으로 %revise%.">
+    <wrap name="range" wrap="varFixed" />
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <selection name="revise" boundary="UByte" items="revise" />
+    <wrap name="value" wrap="varFixed" />
+    <wrap name="attenuation" wrap="varFixedRate" />
+    <numeric name="time" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+  <triggerFormat code="9" name="전역수치조정" text="%targetCondition%조건에 맞는 타겟들에게 %value%만큼 %time%의 중복금지시간으로 %revise%.">
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <selection name="revise" boundary="UByte" items="revise" />
+    <wrap name="value" wrap="varFixed" />
+    <numeric name="time" boundary="Fixed" decimalPlaces="3" min="0" />
+  </triggerFormat>
+  <triggerFormat code="10" name="레벨여부" text="유닛의 %level%레벨 이상의 경우 다음 트리거, 아닐 경우 %ip1%으로 이동한다.">
+    <numeric name="level" boundary="UShort" min="1" value="1" />
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="11" name="유닛보유여부" text="%unit%유닛이 %alive% 상태로 %count%개 이상 보유하고 있을 경우 다음 트리거, 아닐 경우 %ip1%으로 이동한다.">
+    <asset name="unit" boundary="UShort" depth="2" root="9932-635399139943365120-2" />
+    <selection name="alive" boundary="UByte" items="alive" />
+    <numeric name="count" boundary="UByte" min="1" value="1" />
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="12" name="유닛목록보유여부" text="%units%유닛들 중 %alive% 상태로 %count%개 이상 보유하고 있을 경우 다음 트리거, 아닐 경우 %ip1%으로 이동한다.">
+    <list name="units">
+      <triggerFormat name="유닛" text="%unit%">
+        <asset name="unit" boundary="UShort" depth="2" root="9932-635399139943365120-2" />
+      </triggerFormat>
+    </list>
+    <selection name="alive" boundary="UByte" items="alive" />
+    <numeric name="count" boundary="UByte" min="1" value="1" />
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="13" name="룬보유여부" text="%rune%룬을 사용할 수 있을 경우 다음 트리거, 아닐 경우 %ip1%으로 이동한다.">
+    <asset name="rune" boundary="UShort" depth="2" root="7320-636203373297116253-34249" />
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="14" name="타겟비교" text="타겟이 %targetCondition%일 경우 다음 트리거, 아닐 경우 %ip1%으로 이동한다.">
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="15" name="버프" text="%buff%를 %stack%스택으로 %time%한다.">
+    <asset name="buff" boundary="UShort" depth="2" root="9932-635399139943385121-67" />
+    <tab name="time" codeBoundary="UByte">
+      <triggerFormat name="시간무제한" text="시간무제한으로 설정" />
+      <triggerFormat name="시간적용" text="%time% 시간만큼 설정">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="시간추가" text="%time% 시간만큼 추가">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="시간차감" text="%time% 시간만큼 차감">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="제거" text="제거" />
+    </tab>
+    <wrap name="stack" wrap="varFixed" />
+  </triggerFormat>
+  <triggerFormat code="16" name="영역버프" text="%range%범위에 %targetCondition%조건에 맞는 타겟들에게 %buff%를 %stack%스택으로 %time%한다.">
+    <wrap name="range" wrap="varFixed" />
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <asset name="buff" boundary="UShort" depth="2" root="9932-635399139943385121-67" />
+    <tab name="time" codeBoundary="UByte">
+      <triggerFormat name="시간무제한" text="시간무제한으로 설정" />
+      <triggerFormat name="시간적용" text="%time% 시간만큼 설정">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="시간추가" text="%time% 시간만큼 추가">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="시간차감" text="%time% 시간만큼 차감">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="제거" text="제거" />
+    </tab>
+    <wrap name="stack" wrap="varFixed" />
+  </triggerFormat>
+  <triggerFormat code="17" name="전역버프" text="%targetCondition%조건에 맞는 타겟들에게 %buff%를 %stack%스택으로 %time%한다.">
+    <wrap name="targetCondition" wrap="targetCondition" />
+    <asset name="buff" boundary="UShort" depth="2" root="9932-635399139943385121-67" />
+    <tab name="time" codeBoundary="UByte">
+      <triggerFormat name="시간무제한" text="시간무제한으로 설정" />
+      <triggerFormat name="시간적용" text="%time% 시간만큼 설정">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="시간추가" text="%time% 시간만큼 추가">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="시간차감" text="%time% 시간만큼 차감">
+        <wrap name="time" wrap="varFixed" />
+      </triggerFormat>
+      <triggerFormat name="제거" text="제거" />
+    </tab>
+    <wrap name="stack" wrap="varFixed" />
+  </triggerFormat>
+  <triggerFormat code="18" name="이벤트" text="%toTarget% 이벤트를 출력한다.">
+    <selection name="toTarget" boundary="UByte">
+      <item code="0" name="자신에게" />
+      <item code="1" name="아군에게" />
+      <item code="2" name="적에게" />
+      <item code="3" name="모두에게" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="19" name="사운드" text="%sound%사운드를 %volume%볼륨으로 출력한다.">
+    <list name="sound">
+      <triggerFormat name="사운드" text="%sound%">
+        <asset name="sound" boundary="UShort" depth="3" root="5840-635405899930140525-1368" />
+      </triggerFormat>
+    </list>
+    <numeric name="volume" boundary="Float" value="1" min="0" max="1" decimalPlaces="3" />
+  </triggerFormat>
+  <triggerFormat code="20" name="아나운서" text="%toTarget% 에게 %announce% 아나운서 음성을 출력한다.">
+    <selection name="toTarget" boundary="UByte">
+      <item code="0" name="자신에게" />
+      <item code="1" name="아군에게" />
+      <item code="2" name="적에게" />
+      <item code="3" name="모두에게" />
+    </selection>
+    <selection name="announce" boundary="UByte" items="announce" />
+  </triggerFormat>
+  <triggerFormat code="21" name="진동" text="%level%만큼 화면을 진동시킨다.">
+    <numeric name="level" boundary="UByte" min="1" />
+  </triggerFormat>
+  <triggerFormat code="22" name="메시지" text="%toTarget% %message%메시지를 출력한다.">
+    <selection name="toTarget" boundary="UByte">
+      <item code="0" name="자신에게" />
+      <item code="1" name="아군에게" />
+      <item code="2" name="적에게" />
+      <item code="3" name="모두에게" />
+    </selection>
+    <asset name="message" boundary="UShort" depth="2" root="9932-635399139943395122-111" />
+  </triggerFormat>
+  <triggerFormat code="23" name="중지" text="%ip1%로 진행을 이동한다.">
+    <pointer name="ip1" />
+  </triggerFormat>
+  <triggerFormat code="24" name="커맨드없음" text="커맨드가 없게 처리한다." />
+  <triggerFormat code="25" name="커맨드불가" text="%message%와 %announce%음성을 출력하고 실행불가로 처리한다.">
+    <asset name="message" boundary="Short" depth="2" root="9932-635399139943395122-111" allowEmpty="True" />
+    <selection name="announce" boundary="Byte" items="announce" />
+  </triggerFormat>
+  <triggerFormat code="26" name="타겟커맨드" text="%source% 대상으로 %unit% 타겟을 필요로 하는 %effect% %animation%를 표시하는 커맨드로 처리하고 타겟조건에 맞을 경우 다음 트리거로 이동한다.">
+    <tab name="unit" codeBoundary="UByte">
+      <triggerFormat name="조건없음" text="모든" />
+      <triggerFormat name="조건적용" text="%targetCondition%에 맞는 대상의">
+        <wrap name="targetCondition" wrap="targetCondition" />
+      </triggerFormat>
+    </tab>
+    <asset name="animation" boundary="UShort" depth="3" root="9932-635399139943385121-75" />
+    <mask name="effect" boundary="UByte" items="commandEffectMask" />
+    <selection name="source" boundary="UByte">
+      <item code="1" name="시야와 무관하게" />
+      <item code="0" name="시야에 보이는 타겟지점만" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="27" name="영역커맨드" text="%source%을 대상으로 %range%범위에 %unit% 타겟들을 %effect% %animation%를 표시하는 커맨드로 처리하고 타겟조건에 맞을 경우 다음 트리거로 이동한다.">
+    <wrap name="range" wrap="varFloat" />
+    <tab name="unit" codeBoundary="UByte">
+      <triggerFormat name="조건없음" text="모든" />
+      <triggerFormat name="조건적용" text="%targetCondition%에 맞는 대상의">
+        <wrap name="targetCondition" wrap="targetCondition" />
+      </triggerFormat>
+    </tab>
+    <asset name="animation" boundary="UShort" depth="3" root="9932-635399139943385121-75" />
+    <mask name="effect" boundary="UByte" items="commandEffectMask" />
+    <selection name="source" boundary="UByte">
+      <item code="1" name="시야와 무관하게" />
+      <item code="0" name="시야에 보이는 타겟지점만" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="28" name="건설커맨드" text="%source% 건설하는 커맨드로 처리한다.">
+    <selection name="source" boundary="UByte">
+      <item code="1" name="시야와 무관하게" />
+      <item code="2" name="시야에 보이는 타겟지점만" />
+      <item code="3" name="소환가능지점만" />
+    </selection>
+  </triggerFormat>
+  <triggerFormat code="29" name="커맨드실행" text="커맨드를 실행가능으로 %creation%">
+    <selection name="creation" boundary="UByte">
+      <item code="0" name="처리한다." />
+      <item code="1" name="처리하면서 유닛을 타겟위치에 등장시킨다." />
+    </selection>
+  </triggerFormat>
+</triggerFormatAsset>

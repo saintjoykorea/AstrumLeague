@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="e782b458-0a93-44e3-b650-b5d02944a632" />
+        <pointer name="ip1" destination="4" />
+        <pointer name="ip2" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임커맨드" annotated="False">
+        <numeric name="index" value="3" />
+        <tab name="process" format="입력없음">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="직선커맨드" annotated="False">
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="20" reference="388a7b35-a693-4438-9c29-96e0bb836837/9" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="thickness">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.7" reference="388a7b35-a693-4438-9c29-96e0bb836837/11" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <tab name="unit" format="조건적용">
+          <triggerUnit annotated="False">
+            <wrap name="targetCondition">
+              <triggerUnit annotated="False">
+                <selection name="exclusion" value="포함" />
+                <selection name="alive" value="(O)" />
+                <list name="unit" />
+                <mask name="type" selection="" />
+                <mask name="attribute" selection="" />
+                <mask name="attributeExclusion" selection="" />
+                <tab name="compare" format="비교없음">
+                  <triggerUnit annotated="False" />
+                </tab>
+                <mask name="allience" selection="적" />
+                <mask name="status" selection="" />
+                <mask name="building" selection="" />
+                <mask name="etc" selection="" />
+                <list name="buff" />
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <asset name="animation" />
+        <asset name="sourceAnimation" selection="cbc5966e-734d-4973-bdb6-8d203b16f180" />
+        <mask name="effect" selection="스트로크,블링크" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="45e90586-58ba-4881-bb5b-19c9afe7f2ea" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="버프여부" annotated="False">
+        <asset name="buff" selection="61b07548-4bac-4006-9a67-dafa9d1d515d" />
+        <numeric name="stack" value="0" />
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임커맨드" annotated="False">
+        <numeric name="index" value="3" />
+        <tab name="process" format="입력있음">
+          <triggerUnit annotated="False">
+            <wrap name="time">
+              <triggerUnit annotated="False">
+                <tab name="value" format="능력치">
+                  <triggerUnit annotated="False">
+                    <asset name="ability" selection="59fc4779-0949-4fa5-8dbb-a81866e6be2f" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+            <selection name="cooltime" value="시간" />
+          </triggerUnit>
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="현재 명령이 끝나면 이전 명령이 계속 처리되게끔 처리한다" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드없음" annotated="False" />
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

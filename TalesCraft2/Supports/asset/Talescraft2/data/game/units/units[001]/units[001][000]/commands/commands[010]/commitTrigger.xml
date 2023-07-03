@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="선택제한" annotated="False">
+        <mask name="selection" selection="다중그룹제한" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="예약,목표건설" />
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="커맨드없음" annotated="False" />
+      <triggerUnit name="건설커맨드" annotated="False">
+        <asset name="unit" selection="2200-635410442949142461-1658" />
+        <selection name="targeting" value="건설" />
+        <tab name="process" format="실행가능">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

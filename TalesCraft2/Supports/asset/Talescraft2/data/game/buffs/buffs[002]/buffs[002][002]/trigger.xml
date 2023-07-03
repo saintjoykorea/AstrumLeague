@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-120" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="69ac5277-637a-4ca2-9511-a2cc2d9976d4" />
+        <pointer name="ip1" destination="10" />
+      </triggerUnit>
+      <triggerUnit name="종료여부" annotated="False">
+        <pointer name="ip1" destination="10" />
+      </triggerUnit>
+      <triggerUnit name="수치비교" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="compare" value="남은 체력이 클 경우" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="10" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임여부" annotated="False">
+        <numeric name="index" value="2" />
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" destination="10" />
+      </triggerUnit>
+      <triggerUnit name="은폐" annotated="False">
+        <selection name="cloaking" value="활성화" />
+      </triggerUnit>
+      <triggerUnit name="데미지여부" annotated="False">
+        <pointer name="ip1" destination="7" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="waiting" value="계속" />
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="은신여부" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="감시" annotated="False">
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2" reference="4454bc66-042b-4852-916d-16a3b2e7a4c1/9" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="12" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <selection name="toTarget" value="버프" />
+        <numeric name="index" value="2" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="5" reference="4454bc66-042b-4852-916d-16a3b2e7a4c1/15" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="시간" />
+      </triggerUnit>
+      <triggerUnit name="은폐" annotated="False">
+        <selection name="cloaking" value="비활성화" />
+      </triggerUnit>
+      <triggerUnit name="수치초기화" annotated="False">
+        <selection name="value" value="피해" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="waiting" value="중지" />
+        <pointer name="ip1" destination="0" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

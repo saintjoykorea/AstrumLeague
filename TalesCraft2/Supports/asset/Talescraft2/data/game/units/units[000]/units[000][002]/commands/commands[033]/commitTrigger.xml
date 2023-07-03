@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="완료" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="유닛보유여부" annotated="False">
+        <asset name="unit" selection="1004-636336364009991528-39068" />
+        <selection name="alive" value="덱에 있는" />
+        <numeric name="count" value="1" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="생산커맨드" annotated="False">
+        <asset name="unit" selection="1004-636336364009991528-39068" />
+        <tab name="process" format="실행가능">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

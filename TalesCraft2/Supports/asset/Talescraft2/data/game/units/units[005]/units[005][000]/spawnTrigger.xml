@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="11184-636004650663731624-25075" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="전역버프" annotated="False">
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="지하유닛,지하일꾼,지상유닛,지상일꾼,공중유닛,공중일꾼" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="플레이어" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <asset name="buff" selection="5420-636271971316746637-43203" />
+        <tab name="time" format="시간적용">
+          <triggerUnit annotated="False">
+            <wrap name="time">
+              <triggerUnit annotated="False">
+                <tab name="value" format="능력치">
+                  <triggerUnit annotated="False">
+                    <asset name="ability" selection="4456-636341972767292438-39602" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="사운드" annotated="False">
+        <list name="sound">
+          <triggerUnit annotated="False">
+            <asset name="sound" selection="8512-636287996390167882-43548" />
+          </triggerUnit>
+        </list>
+        <numeric name="volume" value="1" />
+      </triggerUnit>
+      <triggerUnit name="아나운서" annotated="True">
+        <selection name="toTarget" value="적에게" />
+        <selection name="announce" value="적스킬감지" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="creation" value="처리한다." />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

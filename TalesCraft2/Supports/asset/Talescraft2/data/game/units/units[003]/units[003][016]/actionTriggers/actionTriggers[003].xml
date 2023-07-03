@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="기본모션취소" annotated="False">
+        <selection name="fromBaseMotion" value="이동" />
+        <selection name="toBaseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="회전" annotated="False">
+        <selection name="dir" value="타겟" />
+        <pointer name="ip1" destination="1" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임여부" annotated="False">
+        <numeric name="index" value="0" />
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <numeric name="index" value="0" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="3372-635405908485259850-1378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="속도" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="액션1" />
+      </triggerUnit>
+      <triggerUnit name="타겟변경" annotated="False">
+        <selection name="origin" value="현재" />
+        <tab name="target" format="타겟거리지점">
+          <triggerUnit annotated="False">
+            <wrap name="range">
+              <triggerUnit annotated="False">
+                <tab name="value" format="능력치">
+                  <triggerUnit annotated="False">
+                    <asset name="ability" selection="4456-636341972767292438-39602" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+            <selection name="approach" value="방향" />
+          </triggerUnit>
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.56" />
+                <asset name="ability" selection="8044-636251715694792384-40378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="인터럽트" />
+      </triggerUnit>
+      <triggerUnit name="생성" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="useResource" value="자원을 소비하지 않고" />
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="593737c6-212c-482a-8f83-f8da896e4e88" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="타겟" />
+        <asset name="animation" selection="1180-636199026814269153-33889" />
+        <selection name="follow" value="타겟의 위치로" />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.48" />
+                <asset name="ability" selection="8044-636251715694792384-40378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="인터럽트" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

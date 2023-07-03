@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="단축선택등록" annotated="False">
+        <selection name="reg" value="해제" />
+      </triggerUnit>
+      <triggerUnit name="충돌" annotated="False">
+        <selection name="activation" value="비활성화" />
+      </triggerUnit>
+      <triggerUnit name="작업변경" annotated="False">
+        <numeric name="level" value="1" />
+      </triggerUnit>
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태2" />
+        <selection name="command" value="상태로 변경" />
+      </triggerUnit>
+      <triggerUnit name="자원보유여부" annotated="False">
+        <pointer name="ip1" destination="5" />
+        <pointer name="ip2" destination="13" />
+      </triggerUnit>
+      <triggerUnit name="기지탐색" annotated="False">
+        <pointer name="ip1" destination="25" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="이동" annotated="False">
+        <tab name="useRange" format="범위적용">
+          <triggerUnit annotated="False">
+            <wrap name="range">
+              <triggerUnit annotated="False">
+                <tab name="value" format="입력값">
+                  <triggerUnit annotated="False">
+                    <numeric name="value" value="0" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <pointer name="ip1" destination="7" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="회전" annotated="False">
+        <selection name="dir" value="타겟" />
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="자원반환" annotated="False">
+        <pointer name="ip1" destination="6" />
+        <pointer name="ip2" destination="25" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="정지" />
+        <selection name="to" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="이동" />
+        <selection name="to" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="자원탐색" annotated="False">
+        <selection name="resource" value="가스" />
+        <selection name="near" value="가까운" />
+        <pointer name="ip1" destination="14" />
+        <pointer name="ip2" destination="25" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="이동" annotated="False">
+        <tab name="useRange" format="범위적용">
+          <triggerUnit annotated="False">
+            <wrap name="range">
+              <triggerUnit annotated="False">
+                <tab name="value" format="입력값">
+                  <triggerUnit annotated="False">
+                    <numeric name="value" value="0" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <pointer name="ip1" destination="15" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="회전" annotated="False">
+        <selection name="dir" value="타겟" />
+        <pointer name="ip1" destination="17" />
+      </triggerUnit>
+      <triggerUnit name="자원점유" annotated="False">
+        <numeric name="waiting" value="2" />
+        <pointer name="ip1" destination="14" />
+        <pointer name="ip2" destination="25" />
+      </triggerUnit>
+      <triggerUnit name="모션" annotated="False">
+        <tab name="animation" format="없음">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2.4" reference="13128-636265063821136597-40950/35" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="인터럽트" />
+      </triggerUnit>
+      <triggerUnit name="자원채취" annotated="False">
+        <wrap name="amount">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="3008-636198312563134690-33913" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="13" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="정지" />
+        <selection name="to" value="액션4" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="이동" />
+        <selection name="to" value="액션5" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태6" />
+        <selection name="command" value="상태로 변경" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

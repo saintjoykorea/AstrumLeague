@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-119" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="자신능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="3372-635405908482139671-1376" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="설정한다" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="입력값">
+          <triggerUnit annotated="False">
+            <numeric name="value" value="1.2" reference="08382804-c66c-410c-b2fa-64d277510ee5/20" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="곱한다" />
+      </triggerUnit>
+      <triggerUnit name="타겟비교" annotated="False">
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="무관" />
+            <list name="unit" />
+            <mask name="type" selection="지하일꾼,지상일꾼,공중일꾼" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="입력값">
+          <triggerUnit annotated="False">
+            <numeric name="value" value="0.5" reference="08382804-c66c-410c-b2fa-64d277510ee5/21" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="곱한다" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

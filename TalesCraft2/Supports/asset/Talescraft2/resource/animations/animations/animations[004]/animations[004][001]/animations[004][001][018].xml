@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animationAsset version="65" globalPositionIndex="0" globalStartPosition0="0,0,0" globalEndPosition0="0,0,0" globalStartPosition1="0,0,0" globalEndPosition1="0,0,0" globalStartPosition2="0,0,0" globalEndPosition2="0,0,0" color="1" gridSize="40" camera="30,100,100000,0,0,0,42,2000" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" ground="False">
+  <keys>
+    <key name="Position" value="1" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Scale" value="2" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 0" value="4" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 1" value="8" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 2" value="16" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 3" value="32" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 4" value="64" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 5" value="128" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 6" value="256" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 7" value="512" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 8" value="1024" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 9" value="2048" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 10" value="4096" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 11" value="8192" visible="False" layer="None" globalPosition="None" />
+    <key name="Bottom" value="16384" visible="True" layer="Bottom" globalPosition="None" />
+    <key name="Middle" value="32768" visible="True" layer="Middle" globalPosition="None" />
+    <key name="Top" value="65536" visible="True" layer="Top" globalPosition="None" />
+    <key name="Body" value="131072" visible="False" layer="None" globalPosition="Position1" />
+    <key name="Head" value="262144" visible="False" layer="None" globalPosition="Position1" />
+  </keys>
+  <backgrounds />
+  <animation name="meteor" keys="Position" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+    <derivation type="Multi">
+      <animation name="Animation" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <derivation type="Multi">
+          <animation name="Top-MeteorMove" keys="Top" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="1" x="Linear;333,0,0,0" y="Linear;100,0,0,0" z="Linear;1500,0,0,0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <derivation type="Multi">
+              <animation name="Animation" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="0" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="0.6,0" emissionRate="30" emissionMax="1" duration="0" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Normal" imageRoot="2869c625-25ac-49e2-9f3a-024fa4bc7fbb" images="cb1c182b-9951-46bc-9ee7-1adfd5237591;5e3d3c99-d76d-4bfe-9019-46d55d84b9b6;6d3bb3e6-c275-4044-beab-888aba1dc713;4eb95c22-86bd-4613-8a25-638cfaadc2bc;5dd8ecc2-e177-4f60-ae28-75b0210fd5dc;257e4637-2bd9-4830-9a42-e283a4670b3b;2044deea-0254-4037-b0fa-5876529b194c;d5b86fd1-ea18-4d52-b7b0-78c7265ab792" imageSequence="1" material="1,1,1,1,0.2,6,0,0,0" colorFixedComponent="False" rotationFixedComponent="True" scaleX="Constant;0.25,0" scaleY="Constant;0.25,0" scaleZ="Constant;0.25,0" scaleFixedComponent="True" view="Billboard" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi">
+                  <animation name="Animation" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                    <substance type="Particle">
+                      <particle color="0" gridSize="40" fov="30" shape="Sphere;10" shapeShell="False" life="0.8,0.2" emissionRate="200" emissionMax="100" duration="0" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Normal" imageRoot="5880-635778439201663325-164805" images="4172-636138811272653613-28204;4172-636138811272673615-28205;4172-636138811272693616-28206" imageSequence="1" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;0.9,0" colorGreen="Constant;0.7246377,0" colorBlue="Constant;0.5768117,0" colorAlpha="Curve;0,0.06329124,0,-9.432254,-9.432254;1,0,0,-3.62149,-3.62149;1" colorFixedComponent="False" radial="Curve;0,0,0,0.4010742,0.4010742;1,0,0,-0.5347593,-0.5347593;20000" rotationZ="Constant;0,360" rotationFixedComponent="True" scaleX="Curve;0,0.6,0,-0.2291819,-0.2291819;1,0,0,-0.3437705,-0.3437705;100" scaleY="Curve;0,0.6,0,-0.2291819,-0.2291819;1,0,0,-0.3437705,-0.3437705;100" scaleZ="Curve;0,0.6,0,-0.2291819,-0.2291819;1,0,0,-0.3437705,-0.3437705;100" scaleFixedComponent="True" view="Billboard" stretchRate="0" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                    </substance>
+                    <derivation type="Multi" />
+                  </animation>
+                  <animation name="middle" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                    <substance type="Particle">
+                      <particle color="0" gridSize="40" fov="30" shape="Hemisphere;40" shapeShell="False" life="0.4,0" emissionRate="30" emissionMax="10000" duration="0" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Normal" imageRoot="5880-635778439201663325-164805" images="6716-635858769655394059-176789" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,1,0,0,0;1,0,0,-75.00001,-75.00001;1" colorFixedComponent="False" radial="Constant;66,0" rotationZ="Constant;0,360" rotationFixedComponent="True" scaleX="Linear;0.05,0,0.02,0" scaleY="Linear;0.05,0,0.02,0" scaleZ="Linear;0.05,0,0.02,0" scaleFixedComponent="True" view="Billboard" stretchRate="0" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                    </substance>
+                    <derivation type="Multi" />
+                  </animation>
+                  <animation name="trail particle" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="1" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                    <substance type="Particle">
+                      <particle color="1" gridSize="40" fov="30" shape="Sphere;0.2" shapeShell="False" life="0.3,0.05" emissionRate="20" emissionMax="10000" duration="0" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Substract" imageRoot="10212-636209591663245923-35985" images="196-636259697580425051-40929;196-636259697580565059-40931;196-636259697580975083-40932;196-636259697581845132-40934;196-636259697581915136-40935;196-636259697581985140-40936;196-636259697582055144-40937;196-636259733029750116-40939;196-636259733031520217-40940;196-636259733035560431-40942" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;1,0" colorBlue="Constant;1,0" colorAlpha="Curve;0,0.05886076,0,0,0;1,0,0,-10.26755,-10.26755;1" colorFixedComponent="False" radial="Curve;0,45.23231,0,0,0;1,-15,0,0,0;20000" rotationZ="Linear;0,330,0,360" rotationFixedComponent="True" scaleX="Curve;0,0.3,0,0.03335425,0.03335425;1,0.25,0,0.03335425,0.03335425;100" scaleY="Curve;0,0.3,0,0.03335425,0.03335425;1,0.25,0,0.03335425,0.03335425;100" scaleZ="Curve;0,0.3,0,0.03335425,0.03335425;1,0.25,0,0.03335425,0.03335425;100" scaleFixedComponent="True" view="Billboard" stretchRate="0" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                    </substance>
+                    <derivation type="Multi" />
+                  </animation>
+                </derivation>
+              </animation>
+            </derivation>
+          </animation>
+        </derivation>
+      </animation>
+      <animation name="MechaExplosion" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="1" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <sound sound="630d96a7-ce8d-4e69-a5ab-b740513d7ebd" volume="1" loop="0" latency="0" essential="False" />
+        <derivation type="Multi">
+          <animation name="bottom" keys="Bottom" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleX="Constant;0.8,0" scaleY="Constant;0.8,0" scaleZ="Constant;0.8,0" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <derivation type="Multi">
+              <animation name="crack_glow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="2.5,0" emissionRate="100" emissionMax="1" duration="1" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Substract" imageRoot="5880-635778439133169408-164793" images="4408-635778643979685876-164929" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;1,0" colorBlue="Constant;1,0" colorAlpha="Curve;0,0,0,72.00401,72.00401;0.09332324,0.6962022,0,0,0;1,0,0,-22.56548,-22.56548;1" colorFixedComponent="False" rotationFixedComponent="True" scaleX="Constant;4,0" scaleY="Constant;4,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="Burn" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="3,0" emissionRate="100" emissionMax="1" duration="1" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="5880-635778439133169408-164793" images="4408-635778643979685876-164929" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,0.2721516,0,0,0;1,0,0,-29.6667,-29.6667;1" colorFixedComponent="False" rotationFixedComponent="True" scaleX="Linear;6,0,1,0" scaleY="Linear;6,0,1,0" scaleZ="Linear;6,0,1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="crack" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="2,1" emissionRate="10000" emissionMax="1" duration="0.1" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="5880-635778439133169408-164793" images="7388-635997934719619035-23334" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;0.8,0" colorBlue="Constant;0.4,0" colorAlpha="Curve;0,0.3958033,0,0.5696201,0.5696201;1,0,0,-43.80537,-43.80537;1" colorFixedComponent="False" rotationZ="Constant;0,360" rotationFixedComponent="True" scaleX="Constant;0.6,0.1" scaleY="Constant;0.6,0.1" scaleZ="Constant;0.6,0.1" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="crack" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="2.5,0" emissionRate="10000" emissionMax="1" duration="0.1" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="30c6c550-2ac9-4d8c-933d-edaaddb24aa2" images="4796e0fb-82de-4bdf-9e36-30993649b2e8" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;0.66,0" colorBlue="Constant;0.44,0" colorAlpha="Curve;0,0.4,0,0,0;1,0,0,-49.79906,-49.79906;1" colorFixedComponent="False" rotationZ="Constant;0,360" rotationFixedComponent="True" scaleX="Constant;1,0" scaleY="Constant;1,0" scaleZ="Constant;1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="crack" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="2.6,0" emissionRate="10000" emissionMax="2" duration="0.1" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="2869c625-25ac-49e2-9f3a-024fa4bc7fbb" images="0ca581ed-40be-4662-971c-2aa0331d2c2d" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;0.5,0" colorBlue="Constant;0.2,0" colorAlpha="Curve;0,0.66,0,0,0;0.66,0.66,0,-0.01370778,-0.01370778;1,0,0,-62.74467,-62.74467;1" colorFixedComponent="False" rotationFixedComponent="True" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+            </derivation>
+          </animation>
+          <animation name="middle" keys="Top" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleX="Constant;0.8,0" scaleY="Constant;0.8,0" scaleZ="Constant;0.8,0" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <derivation type="Multi">
+              <animation name="middle" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="0" gridSize="40" fov="30" shape="Hemisphere;80" shapeShell="False" life="0.8,0.2" emissionRate="10000" emissionMax="18" duration="0.3" latency="0.1" prewarm="False" descent="False" finish="True" clear="False" blendMode="Normal" imageRoot="5880-635778439201663325-164805" images="6716-635858769655394059-176789" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,1,0,0,0;0.8780487,1,0,-0.01370778,-0.01370778;1,0,0,-83.04703,-83.04703;1" colorFixedComponent="False" radial="Constant;120,100" x="Constant;0,40" y="Constant;0,40" z="Curve;0,418.4017,0,-0.09642006,-0.09642006;1,-115.9673,0,-3.801651,-3.801651;20000" rotationZ="Linear;0,0,0,360" rotationFixedComponent="True" scaleX="Constant;0.05,0.03" scaleY="Constant;0.05,0.03" scaleZ="Constant;0.05,0.03" scaleFixedComponent="True" view="Billboard" stretchRate="0.015" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="d" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" y="Constant;-30,0" billboardOffset="True" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Sprite">
+                  <sprite color="1" gridSize="40" fov="30" delay="0.05" loop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" frame="39">
+                    <spriteLayer name="">
+                      <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="1" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="2" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="3" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="4" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="5" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="6" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="7" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="8" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="9" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="10" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="11" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="12" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="13" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="14" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="15" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="16" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="17" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="18" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="19" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="20" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="21" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="22" status="Dependent">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="23" status="End">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="24" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                        <saturation value="0" />
+                        <color value="FFECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="25" status="Dependent">
+                        <saturation value="0" />
+                        <color value="EDECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="26" status="Dependent">
+                        <saturation value="0" />
+                        <color value="DBECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="27" status="Dependent">
+                        <saturation value="0" />
+                        <color value="C8ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="28" status="Dependent">
+                        <saturation value="0" />
+                        <color value="B6ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="29" status="Dependent">
+                        <saturation value="0" />
+                        <color value="A4ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="30" status="Dependent">
+                        <saturation value="0" />
+                        <color value="92ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="31" status="Dependent">
+                        <saturation value="0" />
+                        <color value="80ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="32" status="Dependent">
+                        <saturation value="0" />
+                        <color value="6DECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="33" status="Dependent">
+                        <saturation value="0" />
+                        <color value="5BECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="34" status="Dependent">
+                        <saturation value="0" />
+                        <color value="49ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="35" status="Dependent">
+                        <saturation value="0" />
+                        <color value="37ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="36" status="Dependent">
+                        <saturation value="0" />
+                        <color value="24ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="37" status="Dependent">
+                        <saturation value="0" />
+                        <color value="12ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="38" status="End">
+                        <saturation value="0" />
+                        <color value="00ECBF97" />
+                        <scale value="1.2,1.2,1" />
+                      </spriteLayerFrame>
+                    </spriteLayer>
+                    <spriteLayer name="">
+                      <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                        <image image="de2d1459-83be-4a70-a06d-fc69b76e8ff4" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="1" status="Dependent">
+                        <image image="fb0a2b7a-a9ac-431b-a50a-a48034e4fb75" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="2" status="Dependent">
+                        <image image="efcb8511-f8c2-46bd-a411-3946f4c0e338" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="3" status="Dependent">
+                        <image image="230956df-218d-4d76-ad1e-746b755b61f1" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="4" status="Dependent">
+                        <image image="bbb9df95-768b-4f17-b762-a4ceb1dd4855" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="5" status="Dependent">
+                        <image image="d69c0bd5-c569-4273-93e2-7f6ab6bef8d4" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="6" status="Dependent">
+                        <image image="ab1d7150-80f8-4db3-b691-9d94c5082090" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="7" status="Dependent">
+                        <image image="3572571e-5490-4a74-abe8-e8075bcb8292" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="8" status="Dependent">
+                        <image image="d8304a1c-5310-4d4f-a50b-0ec6c8a885a7" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="9" status="Dependent">
+                        <image image="0a81a4c9-f00e-470f-872f-fa55940e1588" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="10" status="Dependent">
+                        <image image="58c004d8-b2ca-4101-a66b-6e05be2a26d3" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="11" status="Dependent">
+                        <image image="78145899-1708-44aa-8316-db8bfcbd21a4" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="12" status="Dependent">
+                        <image image="057fc9a5-64fe-48df-8f51-5288f5cf5d19" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="13" status="Dependent">
+                        <image image="a492085b-36c2-440f-a088-8d0cab686f13" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="14" status="Dependent">
+                        <image image="3263d625-483c-4db5-bbf0-507b8c673b79" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="15" status="Dependent">
+                        <image image="bdbeefc0-aaec-4fd6-a620-84fc1129cdb6" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="16" status="Dependent">
+                        <image image="b8840832-fe45-4faa-8672-3fd524a07be3" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="17" status="Dependent">
+                        <image image="4f758a62-3d83-4f5d-b3fc-13a69c3f2909" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="18" status="Dependent">
+                        <image image="580c04b6-31aa-4ae2-a28c-9992ad49ba6d" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="19" status="Dependent">
+                        <image image="134c9789-dc75-4330-847e-ae7033431173" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="20" status="Dependent">
+                        <image image="b4d4c920-5272-495f-8cb3-49ee41217b13" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="21" status="Dependent">
+                        <image image="5846ff00-567f-4514-9174-260adced61a3" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="22" status="Dependent">
+                        <image image="ba468b8d-0059-48b4-9cc3-251a056c69c6" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="23" status="Dependent">
+                        <image image="8a2b8105-fd99-477b-8935-1a090f751ee2" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="24" status="Dependent">
+                        <image image="1c4cc356-000f-4dda-9fc1-4c7856cd7b3b" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="25" status="Dependent">
+                        <image image="0ad2a83e-d7aa-497a-81b2-380f5fb0b5ff" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="26" status="Dependent">
+                        <image image="bea7a0ca-9ece-478c-890e-5577ef304e03" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="27" status="Dependent">
+                        <image image="efd80a56-a0ad-43c2-99d9-6a3ac283473f" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="28" status="Dependent">
+                        <image image="ac464cff-fd5a-4bdb-acec-cc2e9646a8cc" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="29" status="Dependent">
+                        <image image="6480ada0-08e5-432c-ac28-1aca5729c9f9" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="30" status="Dependent">
+                        <image image="c02718da-c285-4448-8deb-6545e87a0dc9" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="31" status="Dependent">
+                        <image image="f5d99003-e74a-4fb9-a94a-7561daa95ab3" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="32" status="Dependent">
+                        <image image="184a5979-31a5-4bad-9166-9ef3c82ce1e7" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="33" status="Dependent">
+                        <image image="08d028d7-03ff-4850-8419-7488ec2d3c20" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="34" status="Dependent">
+                        <image image="3f894ee8-dccc-403c-93d8-12bea3421140" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="35" status="Dependent">
+                        <image image="c9b6f259-2f7a-41f8-8128-ea46b595d6b7" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="36" status="Dependent">
+                        <image image="40fb71af-16a0-461c-9f9f-a3da33d8833c" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="37" status="Dependent">
+                        <image image="8961e876-4705-4ea2-b2de-e4610b504b50" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="38" status="End">
+                        <image image="15f12430-d02b-45b7-abdb-489e67ea14cf" position="0,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                    </spriteLayer>
+                  </sprite>
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="explosion" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Rectangle;0,0" shapeShell="False" life="0.8,0" emissionRate="10000" emissionMax="1" duration="0.1" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Screen" imageRoot="5440-635778731738581344-165018" images="7352-636270777048061089-42034;7352-636270777049811190-42035;7352-636270777051411281-42036;7352-636270777052991371-42037;7352-636270777054551461-42038;7352-636270777056121550-42039;7352-636270777057891652-42040;7352-636270777059701755-42041;7352-636270777061271845-42042;7352-636270777062861936-42043;7352-636270777064452027-42044;7352-636270777066052118-42045;7352-636270777067612208-42046;7352-636270777069202299-42047;7352-636270777071072406-42048;7352-636270777072672497-42049" imageSequence="1" material="1,1,1,1,0.2,6,0,0,0" colorGreen="Constant;0.6492752,0" colorBlue="Constant;0.3739129,0" colorAlpha="Curve;0,0.6598738,0,-2.84811,-2.84811;1,0,0,-63.84455,-63.84455;1" colorFixedComponent="False" rotationZ="Constant;0,360" rotationFixedComponent="True" scaleX="Linear;1,0,2,0" scaleY="Linear;1,0,2,0" scaleZ="Linear;1,0,2,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,0,0,1" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="sm_middle" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="0" gridSize="40" fov="30" shape="Hemisphere;30" shapeShell="True" life="3,1" emissionRate="500" emissionMax="48" duration="1" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Normal" imageRoot="5440-635778731728381323-165006" images="10364-635993607544248828-28915;10364-635993607544218826-28914;10364-635993607544188824-28913;10364-635993607543828804-28912;10364-635993607543798802-28911;10364-635993607543768800-28910;10364-635993607543738798-28909;10364-635993607543718797-28908;10364-635993607543638793-28907;10364-635993607543608791-28906;10364-635993607542908751-28905;10364-635993607542788744-28904;10364-635993607542668737-28903;10364-635993607542578732-28902;10364-635993607542528729-28901;10364-635993607542508728-28900;10364-635993607542478726-28899;10364-635993607542198710-28898;10364-635993607541978698-28897;10364-635993607541728683-28896;10364-635993607541518671-28895;10364-635993607541268657-28894;10364-635993607541208654-28893;10364-635993607541018643-28892" imageSequence="1" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;0.8927535,0" colorBlue="Constant;0.7594203,0" colorAlpha="Curve;0,0,0,90,90;0.2195121,0.04615455,0,0,0;1,0,0,-4.157914,-4.157914;1" colorFixedComponent="False" radial="Curve;0,43.04299,6.447464,-0.1632011,-0.1632011;1,0,0,-0.02066314,-0.02066314;20000" x="Constant;0,20" rotationZ="Linear;0,350,0,360" rotationFixedComponent="True" scaleX="Linear;0.5,0.18,1,0.2" scaleY="Linear;0.5,0.18,1,0.2" scaleZ="Linear;0.5,0.18,1,0.2" scaleFixedComponent="True" view="Billboard" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="sm_Bottom" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="26" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="0" gridSize="40" fov="30" shape="Circle;50,50" shapeShell="True" life="3,0.5" emissionRate="500" emissionMax="100" duration="0.5" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Normal" imageRoot="5440-635778731728381323-165006" images="6428-635786403404816943-171052;6428-635786403404976953-171053;6428-635786403405066958-171054;6428-635786403405096960-171055;6428-635786403405226967-171056;6428-635786403405366975-171057;6428-635786403405396977-171058;6428-635786403405436979-171059;6428-635786403405466981-171060;6428-635786403405506983-171061;6428-635786403405536985-171062;6428-635786403405576987-171063;6428-635786403405616989-171064;6428-635786403405656992-171065;6428-635786403405696994-171066;6428-635786403405736996-171067;6428-635786403405776998-171068;6428-635786403405817001-171069;6428-635786403405857003-171070;6428-635786403405987010-171071;6428-635786403406027013-171072;6428-635786403406077016-171073;6428-635786403406117018-171074;6428-635786403406167021-171075;6428-635786403406217024-171076;6428-635786403406257026-171077;6428-635786403406307029-171078;6428-635786403406357032-171079;6428-635786403406397034-171080;6428-635786403406437036-171081;6428-635786403406477038-171082;6428-635786403406507040-171083" imageSequence="2" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;1,0" colorGreen="Constant;0.8927535,0" colorBlue="Constant;0.7594203,0" colorAlpha="Curve;0,0,0,90,90;0.3073174,0.1526562,0,0,0;1,0,0,-18.01236,-18.01236;1" colorFixedComponent="False" radial="Curve;0,194.6214,58.48931,-3.572871,-3.572871;0.1024391,50.39305,26.06105,-0.4189809,-0.4189809;1,0,0,0.0331636,0.0331636;20000" rotationZ="Linear;0,350,0,360" rotationFixedComponent="True" scaleX="Curve;0,0,0.1054852,1.803797,1.803797;1,1,0.448312,0,0;100" scaleY="Curve;0,0,0.1054852,1.803797,1.803797;1,1,0.448312,0,0;100" scaleZ="Curve;0,0,0.1054852,1.803797,1.803797;1,1,0.448312,0,0;100" scaleFixedComponent="True" view="Billboard" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="explosion" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Particle">
+                  <particle color="1" gridSize="40" fov="30" shape="Rectangle;0,0" shapeShell="False" life="0.2,0" emissionRate="10000" emissionMax="1" duration="0.15" latency="0" prewarm="False" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="5880-635778439133169408-164793" images="260-636105020940781208-24714" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,1,0,0,0;0.5902439,1,0,-0.01294942,-0.01294942;1,0,0,-30.68586,-30.68586;1" colorFixedComponent="False" rotationZ="Constant;0,360" rotationFixedComponent="True" scaleX="Curve;0,0,0,0.2560465,0.2560465;1,1.01945,0.8031263,-2.891262,-2.891262;100" scaleY="Curve;0,0,0,0.2560465,0.2560465;1,1.01945,0.8031263,-2.891262,-2.891262;100" scaleZ="Curve;0,0,0,0.2560465,0.2560465;1,1.01945,0.8031263,-2.891262,-2.891262;100" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+            </derivation>
+          </animation>
+        </derivation>
+      </animation>
+    </derivation>
+  </animation>
+</animationAsset>

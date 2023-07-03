@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animationAsset version="65" globalPositionIndex="0" globalStartPosition0="0,0,0" globalEndPosition0="0,0,0" globalStartPosition1="0,0,0" globalEndPosition1="0,0,0" globalStartPosition2="0,0,0" globalEndPosition2="0,0,0" color="1" gridSize="40" camera="30,100,100000,0,0,0,42,1333" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" ground="False">
+  <keys>
+    <key name="Position" value="1" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Scale" value="2" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 0" value="4" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 1" value="8" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 2" value="16" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 3" value="32" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 4" value="64" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 5" value="128" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 6" value="256" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 7" value="512" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 8" value="1024" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 9" value="2048" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 10" value="4096" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 11" value="8192" visible="False" layer="None" globalPosition="None" />
+    <key name="Bottom" value="16384" visible="True" layer="Bottom" globalPosition="None" />
+    <key name="Middle" value="32768" visible="True" layer="Middle" globalPosition="None" />
+    <key name="Top" value="65536" visible="True" layer="Top" globalPosition="None" />
+    <key name="Body" value="131072" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Head" value="262144" visible="True" layer="None" globalPosition="Position1" />
+  </keys>
+  <backgrounds />
+  <animation name="이모티콘_성기사 엄지척" keys="Position" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="3" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+    <derivation type="Multi">
+      <animation name="Mask" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="True" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Sprite">
+          <sprite color="0" gridSize="40" fov="30" delay="0.05" loop="0;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+            <spriteLayer name="">
+              <spriteLayerFrame frame="0" status="Independent">
+                <rect frame="-80,-80,160,140" z="0" fill="True" />
+              </spriteLayerFrame>
+            </spriteLayer>
+          </sprite>
+        </substance>
+        <derivation type="Multi">
+          <animation name="body" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="3" y="Curve;0,222,0,-0.7877674,-0.7877674;0.09999994,60,0,0,0;0.8981318,60,0,0,0;1,222,0,0,0;20000" billboardOffset="False" pathLoop="1;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Sprite">
+              <sprite color="0" gridSize="40" fov="30" delay="0.01" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="50">
+                <spriteLayer name="">
+                  <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="1" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="2" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="3" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="4" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="5" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="6" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="7" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="8" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="9" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="10" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="11" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="12" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="13" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="14" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="15" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="16" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="17" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="18" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="19" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="20" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="21" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="22" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="23" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="24" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="25" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="26" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="27" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="28" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="29" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="30" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="31" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="32" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="33" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="34" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="35" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="36" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="37" status="Dependent">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="38" status="End">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="39" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                    <rotate value="0,0,8" />
+                    <translate value="0,4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="40" status="Dependent">
+                    <rotate value="0,0,7.2" />
+                    <translate value="0,3.6,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="41" status="Dependent">
+                    <rotate value="0,0,6.4" />
+                    <translate value="0,3.2,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="42" status="Dependent">
+                    <rotate value="0,0,5.6" />
+                    <translate value="0,2.8,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="43" status="Dependent">
+                    <rotate value="0,0,4.8" />
+                    <translate value="0,2.4,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="44" status="Dependent">
+                    <rotate value="0,0,4" />
+                    <translate value="0,2,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="45" status="Dependent">
+                    <rotate value="0,0,3.2" />
+                    <translate value="0,1.6,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="46" status="Dependent">
+                    <rotate value="0,0,2.4" />
+                    <translate value="0,1.2,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="47" status="Dependent">
+                    <rotate value="0,0,1.599999" />
+                    <translate value="0,0.7999997,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="48" status="Dependent">
+                    <rotate value="0,0,0.8000002" />
+                    <translate value="0,0.4000001,0" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="49" status="End">
+                    <rotate value="0,0,0" />
+                    <translate value="0,0,0" />
+                  </spriteLayerFrame>
+                </spriteLayer>
+                <spriteLayer name="">
+                  <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="1" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="2" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="3" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="4" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="5" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="6" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="7" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="8" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="9" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="10" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="11" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="12" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="13" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="14" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="15" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="16" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="17" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="18" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="19" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="20" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="21" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="22" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="23" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="24" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="25" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="26" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="27" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="28" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="29" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="30" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="31" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="32" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="33" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="34" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="35" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="36" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="37" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="38" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="39" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="40" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="41" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="42" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="43" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="44" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="45" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="46" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="47" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="48" status="Dependent">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                  <spriteLayerFrame frame="49" status="End">
+                    <image image="71f3f765-7d42-484f-9c26-060530cc94cf" position="0,-18,0" halign="Center" valign="Middle" />
+                  </spriteLayerFrame>
+                </spriteLayer>
+              </sprite>
+            </substance>
+            <derivation type="Multi">
+              <animation name="arm" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="3" x="Curve;0,-3,0,0,0;0.104918,-3,0,0,0;0.18541,-5,0,0,0;1,-5,0,0,0;20000" y="Constant;-31,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationZ="Curve;0,0,0,0,0;0.1079137,0,0,-4.459563E-05,-4.459563E-05;0.2046043,-10,0,-7.436225E-05,-7.436225E-05;0.3146043,-10,0,0,0;0.3455399,0,0,1.444052E-05,1.444052E-05;1,0,0,0,0;14400" rotationFixedComponent="False" rotationDuration="3" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;True" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Sprite">
+                  <sprite color="0" gridSize="40" fov="30" delay="0.02" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="1">
+                    <spriteLayer name="">
+                      <spriteLayerFrame frame="0" status="Independent">
+                        <image image="0df2a1ce-bbb6-450c-813e-191707a65318" position="0,-26,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                    </spriteLayer>
+                  </sprite>
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+              <animation name="Cla" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="3" x="Constant;51,0" y="Curve;0,135,0,-1.348821,-1.348821;0.06557377,135,0,-0.0006258591,-0.0006258591;0.1944264,-28,0,0,0;1,-28,0,0,0;20000" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationZ="Curve;0,0,0,0,0;0.1251079,0,0,9.660652E-05,9.660652E-05;0.2258273,18,0,6.680976E-05,6.680976E-05;0.3265468,18,0,0,0;0.3435973,-6,0,0,0;1,-6,0,0,0;14400" rotationFixedComponent="False" rotationDuration="3" rotationLoop="0;False;False" scaleX="Constant;1.05,0" scaleY="Constant;1.05,0" scaleZ="Constant;1.05,0" scaleFixedComponent="False" scaleDuration="0.06" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+                <substance type="Sprite">
+                  <sprite color="0" gridSize="40" fov="30" delay="1" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" frame="2">
+                    <spriteLayer name="">
+                      <spriteLayerFrame frame="0" status="Independent">
+                        <image image="11a8b182-db55-4cf9-b569-89cb32760821" position="-25,-6,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                      <spriteLayerFrame frame="1" status="Independent">
+                        <image image="8e6ca775-6e8b-4df6-ada4-cd2bc11e665f" position="-24,0,0" halign="Center" valign="Middle" />
+                      </spriteLayerFrame>
+                    </spriteLayer>
+                  </sprite>
+                </substance>
+                <derivation type="Multi" />
+              </animation>
+            </derivation>
+          </animation>
+        </derivation>
+      </animation>
+    </derivation>
+  </animation>
+</animationAsset>

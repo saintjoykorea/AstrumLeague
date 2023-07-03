@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="타입변경" annotated="False">
+        <selection name="type" value="지상유닛" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="animation" selection="5940-636262212449468366-40944" />
+        <selection name="follow" value="타겟의 위치로" />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="은폐" annotated="False">
+        <selection name="cloaking" value="비활성화" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="정지" />
+        <selection name="to" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="기본모션변경" annotated="False">
+        <selection name="from" value="이동" />
+        <selection name="to" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="61b07548-4bac-4006-9a67-dafa9d1d515d" />
+        <tab name="time" format="제거">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="수치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="2e62123f-5152-4144-beb7-49e2ac55452a" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="영역공격" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="1.5" reference="bda70257-28d5-4f71-9d7b-377cd7c11729/11" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="지하유닛,지하일꾼,지상유닛,지상일꾼,건물,타워,병영,광산,본진" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적,중립" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <wrap name="rate">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="4456-636341972767292438-39602" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="attenuation">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.7" reference="bda70257-28d5-4f71-9d7b-377cd7c11729/19" />
+                <asset name="ability" selection="58e9d1b6-4f85-4f70-9928-92b56731b86d" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <numeric name="time" value="0" />
+      </triggerUnit>
+      <triggerUnit name="영역밀치기" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2" reference="bda70257-28d5-4f71-9d7b-377cd7c11729/11" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="지상유닛,지상일꾼" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="거대" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적,중립" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <wrap name="distance">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.5" reference="bda70257-28d5-4f71-9d7b-377cd7c11729/9" />
+                <asset name="ability" selection="c1914cf1-3da4-405f-81c5-a33a04ad3886" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <numeric name="altitude" value="0.35" />
+        <numeric name="time" value="1" reference="bda70257-28d5-4f71-9d7b-377cd7c11729/15" />
+        <selection name="pushing" value="밀쳐낸다" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

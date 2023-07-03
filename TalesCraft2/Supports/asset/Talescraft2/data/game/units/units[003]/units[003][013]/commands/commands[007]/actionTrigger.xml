@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="충돌" annotated="False">
+        <selection name="activation" value="활성화" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="타겟" />
+        <asset name="animation" selection="a2584e4d-4ba1-49dd-9d54-7145fbe4b0ca" />
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="0번 슬롯에 등록하고" />
+      </triggerUnit>
+      <triggerUnit name="타겟비교" annotated="False">
+        <selection name="visible" value="시야에 보이는" />
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="이동" annotated="False">
+        <tab name="useRange" format="범위적용">
+          <triggerUnit annotated="False">
+            <wrap name="range">
+              <triggerUnit annotated="False">
+                <tab name="value" format="입력값">
+                  <triggerUnit annotated="False">
+                    <numeric name="value" value="15" reference="13128-636265063821166599-40998/27" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" destination="7" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="회전" annotated="False">
+        <selection name="dir" value="타겟" />
+        <pointer name="ip1" destination="8" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="타겟" />
+        <asset name="animation" selection="10128-636335762269647367-39057" />
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="2번 슬롯에 등록하고" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <numeric name="index" value="2" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="1.54" />
+                <asset name="ability" selection="8044-636251715694792384-40378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="시간" />
+      </triggerUnit>
+      <triggerUnit name="타겟비교" annotated="False">
+        <selection name="visible" value="시야에 보이는" />
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="적" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임여부" annotated="False">
+        <numeric name="index" value="2" />
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="11" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="액션1" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.05" />
+                <asset name="ability" selection="8044-636251715694792384-40378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="타겟" />
+        <asset name="animation" selection="10128-636335762283843392-39058" />
+        <selection name="follow" value="타겟의 위치로" />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="이팩트제거" annotated="False">
+        <selection name="slot" value="0" />
+        <selection name="op" value="제거" />
+      </triggerUnit>
+      <triggerUnit name="이팩트제거" annotated="False">
+        <selection name="slot" value="2" />
+        <selection name="op" value="제거" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <numeric name="index" value="3" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="59fc4779-0949-4fa5-8dbb-a81866e6be2f" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="시간" />
+      </triggerUnit>
+      <triggerUnit name="대기시작" annotated="False" />
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.013" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과의 거리에 따라" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="수치조정" annotated="False">
+        <selection name="toTarget" value="타겟" />
+        <selection name="revise" value="체력을 제거한다" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="8b305132-ac5d-4f8f-93a0-56c105dad412" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <numeric name="time" value="0" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값과 능력치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.65" />
+                <asset name="ability" selection="8044-636251715694792384-40378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="대기시작시간으로부터" />
+        <selection name="interrupt" value="인터럽트" />
+      </triggerUnit>
+      <triggerUnit name="쿨타임설정" annotated="False">
+        <numeric name="index" value="0" />
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="능력치">
+              <triggerUnit annotated="False">
+                <asset name="ability" selection="3372-635405908485259850-1378" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="cooltime" value="속도" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="완료" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="수치비교" annotated="False">
+        <selection name="compare" value="남은 체력이 최대치 * 수치보다 작을 경우" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="1" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="버프여부" annotated="False">
+        <asset name="buff" selection="7304-636141269573785842-28226" />
+        <numeric name="stack" value="0" />
+        <pointer name="ip1" destination="4" />
+      </triggerUnit>
+      <triggerUnit name="커맨드없음" annotated="False" />
+      <triggerUnit name="수치비교" annotated="False">
+        <selection name="compare" value="남은 광석이 클 경우" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="1" reference="c3bb61cd-1ce2-43a0-b8f4-d6c7a662e424/7" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="버프여부" annotated="False">
+        <asset name="buff" selection="ca650fd2-7611-479d-a8b8-4dc9bc62acc0" />
+        <numeric name="stack" value="0" />
+        <pointer name="ip1" destination="7" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="5b0fba00-85df-4eb6-96ae-013e22f21e47" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="7304-636141269573785842-28226" />
+        <tab name="time" format="시간무제한">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="6764-635410416771175167-1635" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="독립건설" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="animation" selection="36d0d3f4-2144-4fc4-8f53-34122a6b9cd0" />
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="완료" />
+        <pointer name="ip1" destination="10" />
+      </triggerUnit>
+      <triggerUnit name="이팩트제거" annotated="False">
+        <selection name="slot" value="0" />
+        <selection name="op" value="중단" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="animation" selection="4216-636231842993197957-37371" />
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="등록없이" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0.1" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="정지" />
+      </triggerUnit>
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태3" />
+        <selection name="command" value="명령을 실행" />
+      </triggerUnit>
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태2" />
+        <selection name="command" value="상태로 변경" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="진행모션" annotated="False">
+        <list name="animations">
+          <triggerUnit annotated="False">
+            <selection name="baseMotion" value="액션2" />
+          </triggerUnit>
+          <triggerUnit annotated="False">
+            <selection name="baseMotion" value="액션3" />
+          </triggerUnit>
+        </list>
+      </triggerUnit>
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="방치,재개" />
+        <pointer name="ip1" destination="15" />
+      </triggerUnit>
+      <triggerUnit name="이팩트제거" annotated="False">
+        <selection name="slot" value="0" />
+        <selection name="op" value="중단" />
+      </triggerUnit>
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="방치,재개" />
+        <pointer name="ip1" destination="15" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="13" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="animation" selection="5108-636029799840598677-19182" />
+        <selection name="follow" value="타겟의 위치로" />
+        <selection name="ui" value="일반" />
+        <selection name="slot" value="0번 슬롯에 등록하고" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

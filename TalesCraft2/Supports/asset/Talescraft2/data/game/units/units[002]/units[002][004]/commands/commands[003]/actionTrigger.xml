@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="충돌" annotated="False">
+        <selection name="activation" value="활성화" />
+      </triggerUnit>
+      <triggerUnit name="진격" annotated="False" />
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태4" />
+        <selection name="command" value="명령을 실행" />
+      </triggerUnit>
+      <triggerUnit name="공격감시" annotated="False">
+        <pointer name="ip1" destination="6" />
+        <pointer name="ip2" destination="12" />
+      </triggerUnit>
+      <triggerUnit name="상태변경" annotated="False">
+        <selection name="status" value="상태3" />
+        <selection name="command" value="명령을 실행" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="플레이어여부" annotated="False">
+        <pointer name="ip1" destination="9" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" destination="10" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="액션3" />
+      </triggerUnit>
+      <triggerUnit name="이동" annotated="False">
+        <tab name="useRange" format="범위적용">
+          <triggerUnit annotated="False">
+            <wrap name="range">
+              <triggerUnit annotated="False">
+                <tab name="value" format="입력값">
+                  <triggerUnit annotated="False">
+                    <numeric name="value" value="0" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="플레이어여부" annotated="False">
+        <pointer name="ip1" destination="15" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="이동" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="계속" />
+        <pointer name="ip1" destination="16" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="액션3" />
+      </triggerUnit>
+      <triggerUnit name="이동" annotated="False">
+        <tab name="useRange" format="범위없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="interrupt" value="인터럽트" />
+        <pointer name="ip1" destination="1" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

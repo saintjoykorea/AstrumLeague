@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-119" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="변수1" />
+        <tab name="value" format="자신능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="4456-636341972767292438-39602" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="자신능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="c1914cf1-3da4-405f-81c5-a33a04ad3886" />
+          </triggerUnit>
+        </tab>
+        <selection name="combine" value="설정한다" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="변수1">
+          <triggerUnit annotated="False" />
+        </tab>
+        <tab name="valueOp" format="타겟버프스택">
+          <triggerUnit annotated="False">
+            <asset name="buff" selection="5308-636124001161825442-31582" />
+          </triggerUnit>
+        </tab>
+        <selection name="combine" value="더한다" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-120" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="종료여부" annotated="False">
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="수치비교" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="compare" value="남은 체력이 클 경우" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="버프여부" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="c521d8c6-f463-4537-9438-5758069bf352" />
+        <numeric name="stack" value="1" />
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="이팩트" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <list name="animation">
+          <triggerUnit annotated="False">
+            <asset name="animation" selection="2f9bcc88-e63d-4477-a5f7-0ac307b3a9cb" />
+          </triggerUnit>
+          <triggerUnit annotated="False">
+            <asset name="animation" selection="035d8c6f-4096-4e1a-9a00-f6806b6296a8" />
+          </triggerUnit>
+          <triggerUnit annotated="False">
+            <asset name="animation" selection="fe6e8870-dd17-4e37-9a4c-b696cb89f274" />
+          </triggerUnit>
+          <triggerUnit annotated="False">
+            <asset name="animation" selection="a0788d66-7008-4843-9377-859f46edbd44" />
+          </triggerUnit>
+          <triggerUnit annotated="False">
+            <asset name="animation" selection="863d84a5-4862-42b6-ae69-21c1e9500939" />
+          </triggerUnit>
+        </list>
+        <selection name="follow" value="타겟에 붙여서 " />
+        <selection name="slot" value="0번 슬롯에 등록하고" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <selection name="waiting" value="중지" />
+        <pointer name="ip1" destination="0" />
+      </triggerUnit>
+      <triggerUnit name="이팩트제거" annotated="False">
+        <selection name="slot" value="0" />
+        <selection name="op" value="중단" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

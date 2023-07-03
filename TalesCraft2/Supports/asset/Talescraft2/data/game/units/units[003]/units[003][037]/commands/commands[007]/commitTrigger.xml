@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="쿨타임커맨드" annotated="False">
+        <numeric name="index" value="3" />
+        <tab name="process" format="입력없음">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="영역커맨드" annotated="False">
+        <wrap name="distance">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="12" reference="08382804-c66c-410c-b2fa-64d277510ee5/28" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="2.5" reference="08382804-c66c-410c-b2fa-64d277510ee5/30" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <tab name="unit" format="조건적용">
+          <triggerUnit annotated="False">
+            <wrap name="targetCondition">
+              <triggerUnit annotated="False">
+                <selection name="exclusion" value="제외" />
+                <selection name="alive" value="(O)" />
+                <list name="unit" />
+                <mask name="type" selection="지하유닛,지하일꾼,지상유닛,지상일꾼" />
+                <mask name="attribute" selection="" />
+                <mask name="attributeExclusion" selection="" />
+                <tab name="compare" format="비교없음">
+                  <triggerUnit annotated="False" />
+                </tab>
+                <mask name="allience" selection="적" />
+                <mask name="status" selection="" />
+                <mask name="building" selection="" />
+                <mask name="etc" selection="" />
+                <list name="buff" />
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <asset name="animation" selection="e1382feb-cf1b-4efd-94cf-c1694218b7ea" />
+        <asset name="sourceAnimation" />
+        <mask name="effect" selection="스트로크,블링크" />
+        <selection name="source" value="단일 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="단일 유닛" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animationAsset version="65" globalPositionIndex="0" globalStartPosition0="0,0,0" globalEndPosition0="0,0,0" globalStartPosition1="0,0,0" globalEndPosition1="0,0,0" globalStartPosition2="0,0,0" globalEndPosition2="0,0,0" color="1" gridSize="40" camera="30,100,100000,0,0,0,42,1333" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" ground="False">
+  <keys>
+    <key name="Position" value="1" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Scale" value="2" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 0" value="4" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 1" value="8" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 2" value="16" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 3" value="32" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 4" value="64" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 5" value="128" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 6" value="256" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 7" value="512" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 8" value="1024" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 9" value="2048" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 10" value="4096" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 11" value="8192" visible="False" layer="None" globalPosition="None" />
+    <key name="Bottom" value="16384" visible="True" layer="Bottom" globalPosition="None" />
+    <key name="Middle" value="32768" visible="True" layer="Middle" globalPosition="None" />
+    <key name="Top" value="65536" visible="True" layer="Top" globalPosition="None" />
+    <key name="Body" value="131072" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Head" value="262144" visible="True" layer="None" globalPosition="Position1" />
+  </keys>
+  <backgrounds />
+  <animation name="Animation" keys="Position" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTest="Linear;0,0,0,0" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+    <sound sound="24e2a34d-ec93-4674-929a-fd3c6011ec11" volume="1" loop="0" latency="0" essential="False" />
+    <derivation type="Multi">
+      <animation name="BG" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Curve;0,1,0,0.07988639,0.07988639;1,0.6,0,-0.4427895,-0.4427895;100" scaleY="Curve;0,1,0,0.07988639,0.07988639;1,0.6,0,-0.4427895,-0.4427895;100" scaleZ="Curve;0,1,0,0.07988639,0.07988639;1,0.6,0,-0.4427895,-0.4427895;100" scaleFixedComponent="False" scaleDuration="2" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="False" localeVisible="True">
+        <substance type="Sprite">
+          <sprite color="1" gridSize="40" fov="30" delay="0.05" loop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" frame="1">
+            <spriteLayer name="">
+              <spriteLayerFrame frame="0" status="Independent">
+                <image position="0,0,0" halign="Center" valign="Middle" />
+              </spriteLayerFrame>
+            </spriteLayer>
+          </sprite>
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="cover" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Sprite">
+          <sprite color="1" gridSize="40" fov="30" delay="0.01" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" frame="80">
+            <spriteLayer name="">
+              <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                <color value="00FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="1" status="Dependent">
+                <color value="03FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="2" status="Dependent">
+                <color value="06FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="3" status="Dependent">
+                <color value="0AFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="4" status="Dependent">
+                <color value="0DFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="5" status="Dependent">
+                <color value="10FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="6" status="Dependent">
+                <color value="13FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="7" status="Dependent">
+                <color value="17FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="8" status="Dependent">
+                <color value="1AFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="9" status="Dependent">
+                <color value="1DFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="10" status="Dependent">
+                <color value="20FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="11" status="Dependent">
+                <color value="24FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="12" status="Dependent">
+                <color value="27FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="13" status="Dependent">
+                <color value="2AFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="14" status="Dependent">
+                <color value="2DFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="15" status="Dependent">
+                <color value="30FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="16" status="Dependent">
+                <color value="34FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="17" status="Dependent">
+                <color value="37FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="18" status="Dependent">
+                <color value="3AFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="19" status="Dependent">
+                <color value="3DFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="20" status="Dependent">
+                <color value="41FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="21" status="Dependent">
+                <color value="44FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="22" status="Dependent">
+                <color value="47FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="23" status="Dependent">
+                <color value="4AFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="24" status="Dependent">
+                <color value="4DFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="25" status="Dependent">
+                <color value="51FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="26" status="Dependent">
+                <color value="54FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="27" status="Dependent">
+                <color value="57FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="28" status="Dependent">
+                <color value="5AFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="29" status="Dependent">
+                <color value="5EFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="30" status="Dependent">
+                <color value="61FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="31" status="Dependent">
+                <color value="64FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="32" status="Dependent">
+                <color value="67FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="33" status="Dependent">
+                <color value="6BFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="34" status="Dependent">
+                <color value="6EFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="35" status="Dependent">
+                <color value="71FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="36" status="Dependent">
+                <color value="74FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="37" status="Dependent">
+                <color value="77FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="38" status="Dependent">
+                <color value="7BFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="39" status="Dependent">
+                <color value="7EFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="40" status="Dependent">
+                <color value="81FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="41" status="Dependent">
+                <color value="84FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="42" status="Dependent">
+                <color value="88FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="43" status="Dependent">
+                <color value="8BFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="44" status="Dependent">
+                <color value="8EFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="45" status="Dependent">
+                <color value="91FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="46" status="Dependent">
+                <color value="94FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="47" status="Dependent">
+                <color value="98FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="48" status="Dependent">
+                <color value="9BFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="49" status="Dependent">
+                <color value="9EFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="50" status="Dependent">
+                <color value="A1FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="51" status="Dependent">
+                <color value="A5FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="52" status="Dependent">
+                <color value="A8FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="53" status="Dependent">
+                <color value="ABFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="54" status="Dependent">
+                <color value="AEFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="55" status="Dependent">
+                <color value="B2FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="56" status="Dependent">
+                <color value="B5FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="57" status="Dependent">
+                <color value="B8FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="58" status="Dependent">
+                <color value="BBFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="59" status="Dependent">
+                <color value="BEFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="60" status="Dependent">
+                <color value="C2FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="61" status="Dependent">
+                <color value="C5FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="62" status="Dependent">
+                <color value="C8FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="63" status="Dependent">
+                <color value="CBFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="64" status="Dependent">
+                <color value="CFFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="65" status="Dependent">
+                <color value="D2FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="66" status="Dependent">
+                <color value="D5FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="67" status="Dependent">
+                <color value="D8FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="68" status="Dependent">
+                <color value="DBFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="69" status="Dependent">
+                <color value="DFFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="70" status="Dependent">
+                <color value="E2FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="71" status="Dependent">
+                <color value="E5FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="72" status="Dependent">
+                <color value="E8FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="73" status="Dependent">
+                <color value="ECFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="74" status="Dependent">
+                <color value="EFFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="75" status="Dependent">
+                <color value="F2FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="76" status="Dependent">
+                <color value="F5FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="77" status="Dependent">
+                <color value="F9FFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="78" status="Dependent">
+                <color value="FCFFFFFF" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="79" status="End">
+                <color value="FFFFFFFF" />
+              </spriteLayerFrame>
+            </spriteLayer>
+            <spriteLayer name="">
+              <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="1" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="2" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="3" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="4" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="5" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="6" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="7" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="8" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="9" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="10" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="11" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="12" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="13" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="14" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="15" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="16" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="17" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="18" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="19" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="20" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="21" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="22" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="23" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="24" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="25" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="26" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="27" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="28" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="29" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="30" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="31" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="32" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="33" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="34" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="35" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="36" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="37" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="38" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="39" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="40" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="41" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="42" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="43" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="44" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="45" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="46" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="47" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="48" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="49" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="50" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="51" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="52" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="53" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="54" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="55" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="56" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="57" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="58" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="59" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="60" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="61" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="62" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="63" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="64" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="65" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="66" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="67" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="68" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="69" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="70" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="71" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="72" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="73" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="74" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="75" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="76" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="77" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="78" status="Dependent">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="79" status="End">
+                <rect frame="-1500,-1000,3000,2000" z="0" fill="True" />
+              </spriteLayerFrame>
+            </spriteLayer>
+          </sprite>
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="blur" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Sprite">
+          <sprite color="1" gridSize="40" fov="30" delay="0.01" loop="1;False;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" frame="80">
+            <spriteLayer name="">
+              <spriteLayerFrame frame="0" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="0" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="1" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="2.325581" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="2" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="4.651163" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="3" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="6.976743" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="4" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="9.302326" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="5" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="11.62791" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="6" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="13.95349" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="7" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="16.27907" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="8" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="18.60465" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="9" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="20.93023" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="10" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="23.25582" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="11" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="25.5814" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="12" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="27.90698" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="13" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="30.23256" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="14" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="32.55814" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="15" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="34.88372" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="16" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="37.2093" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="17" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="39.53488" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="18" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="41.86047" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="19" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="44.18605" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="20" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="46.51163" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="21" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="48.83721" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="22" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="51.16279" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="23" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="53.48837" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="24" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="55.81396" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="25" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="58.13954" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="26" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="60.46512" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="27" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="62.7907" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="28" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="65.11629" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="29" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="67.44186" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="30" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="69.76744" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="31" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="72.09303" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="32" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="74.4186" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="33" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="76.74419" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="34" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="79.06977" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="35" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="81.39535" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="36" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="83.72092" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="37" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="86.04651" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="38" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="88.37209" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="39" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="90.69768" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="40" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="93.02326" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="41" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="95.34883" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="42" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="97.67442" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="43" status="End">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="44" status="Start" curve="0,0,0,26.56505,26.56505;1,1,0,26.56505,26.56505;2">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="45" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="46" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="47" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="48" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="49" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="50" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="51" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="52" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="53" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="54" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="55" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="56" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="57" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="58" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="59" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="60" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="61" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="62" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="63" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="64" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="65" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="66" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="67" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="68" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="69" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="70" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="71" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="72" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="73" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="74" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="75" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="76" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="77" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="78" status="Dependent">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+              <spriteLayerFrame frame="79" status="End">
+                <blur frame="-2000,-1500,4000,3000" z="0" blurType="Center" intensity="1" direction="10,10" center="0,0,0" range="100" />
+              </spriteLayerFrame>
+            </spriteLayer>
+          </sprite>
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="1" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="1.5" x="Linear;800,0,400,0" y="Linear;-800,0,0,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Linear;2,0,1,0" scaleY="Linear;2,0,1,0" scaleZ="Linear;2,0,1,0" scaleFixedComponent="False" scaleDuration="1.5" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Particle">
+          <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="True" life="1,0" emissionRate="1000" emissionMax="1" duration="0.2" latency="0" prewarm="True" descent="False" finish="False" clear="False" blendMode="Add" imageRoot="8f08e9d7-a8d8-411d-9069-74b3a5cd62a8" images="f1fa5e51-08ea-4739-a95c-3f702cb3af57" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,0,0,17.92591,17.92591;0.721951,0.179747,0,0,0;1,0,0,-40.02824,-40.02824;1" colorFixedComponent="False" rotationFixedComponent="True" scaleX="Constant;1,0" scaleY="Constant;1,0" scaleZ="Constant;1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" />
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="2" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="1" x="Linear;-1000,0,-400,0" y="Linear;-400,0,0,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Linear;1,0,2,0" scaleY="Linear;1,0,2,0" scaleZ="Linear;1,0,2,0" scaleFixedComponent="False" scaleDuration="1" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Particle">
+          <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="True" life="1,0" emissionRate="1000" emissionMax="1" duration="0.2" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="8f08e9d7-a8d8-411d-9069-74b3a5cd62a8" images="7ce7a639-256b-49d0-ba40-91bbd43968de" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,0,0,8.456069,8.456069;0.7024388,0.1044296,0,0,0;1,0,0,-19.33861,-19.33861;1" colorFixedComponent="False" rotationZ="Constant;-180,0" rotationFixedComponent="True" scaleX="Constant;1,0" scaleY="Constant;1,0" scaleZ="Constant;1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" />
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="3" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="1" x="Linear;600,0,200,0" y="Linear;500,0,100,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Linear;2,0,1,0" scaleY="Linear;2,0,1,0" scaleZ="Linear;2,0,1,0" scaleFixedComponent="False" scaleDuration="1" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Particle">
+          <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="True" life="1,0" emissionRate="1000" emissionMax="1" duration="0.2" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="8f08e9d7-a8d8-411d-9069-74b3a5cd62a8" images="12fec12f-097b-4f86-8cdb-4e3e49d3cba4" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,0,0,8.456079,8.456079;0.7024388,0.1044298,0,0,0;1,0,0,-20.33994,-20.33994;1" colorFixedComponent="False" rotationZ="Constant;-10,0" rotationFixedComponent="True" scaleX="Constant;1,0" scaleY="Constant;1,0" scaleZ="Constant;1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" />
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="4" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="1" x="Linear;-800,0,-200,0" y="Linear;400,0,100,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Linear;2,0,1,0" scaleY="Linear;2,0,1,0" scaleZ="Linear;2,0,1,0" scaleFixedComponent="False" scaleDuration="1" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Particle">
+          <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="True" life="1,0" emissionRate="1000" emissionMax="1" duration="0.2" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="8f08e9d7-a8d8-411d-9069-74b3a5cd62a8" images="f1fa5e51-08ea-4739-a95c-3f702cb3af57" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,0,0,13.27356,13.27356;0.7512192,0.1772147,0,0,0;1,0,0,-63.10054,-63.10054;1" colorFixedComponent="False" rotationZ="Constant;20,0" rotationFixedComponent="True" scaleX="Constant;1,0" scaleY="Constant;1,0" scaleZ="Constant;1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" />
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+      <animation name="5" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="False" pathSpeed="0" pathDuration="1" x="Linear;1200,0,400,0" y="Linear;-200,0,-100,0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Linear;2,0,1,0" scaleY="Linear;2,0,1,0" scaleZ="Linear;2,0,1,0" scaleFixedComponent="False" scaleDuration="1" scaleLoop="1;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <substance type="Particle">
+          <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="True" life="1,0" emissionRate="1000" emissionMax="1" duration="0.2" latency="0" prewarm="True" descent="False" finish="True" clear="False" blendMode="Add" imageRoot="8f08e9d7-a8d8-411d-9069-74b3a5cd62a8" images="8a69689e-f36e-4734-a74d-fc7bbebae4a8" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorAlpha="Curve;0,0,0,24.3423,24.3423;0.6926827,0.1518982,0,0,0;1,0,0,-26.30188,-26.30188;1" colorFixedComponent="False" rotationZ="Constant;0,0" rotationFixedComponent="True" scaleX="Constant;1,0" scaleY="Constant;1,0" scaleZ="Constant;1,0" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="True" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" />
+        </substance>
+        <derivation type="Multi" />
+      </animation>
+    </derivation>
+  </animation>
+</animationAsset>

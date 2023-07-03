@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-119" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="수치조건" annotated="False">
+        <selection name="target" value="기존값" />
+        <numeric name="value" value="0" />
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="compare" value="초과할 경우" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="자신능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="e3d902f3-e5a6-4390-8e3b-6edde6861dca" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="더한다" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="입력값">
+          <triggerUnit annotated="False">
+            <numeric name="value" value="1" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="자신능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="5420-636271969095989617-43196" />
+          </triggerUnit>
+        </tab>
+        <selection name="combine" value="곱한다" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="기존값">
+          <triggerUnit annotated="False" />
+        </tab>
+        <tab name="valueOp" format="타겟능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="ebb1a060-b420-4c96-a199-ffda2e5187fa" />
+          </triggerUnit>
+        </tab>
+        <selection name="combine" value="설정한다" />
+      </triggerUnit>
+      <triggerUnit name="수치조건" annotated="False">
+        <selection name="target" value="기존값" />
+        <numeric name="value" value="0" />
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="compare" value="초과할 경우" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="타겟능력치">
+          <triggerUnit annotated="False">
+            <asset name="ability" selection="4992-635567588323797294-5868" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="뺀다" />
+      </triggerUnit>
+      <triggerUnit name="데미지적용" annotated="False">
+        <selection name="target" value="기존값" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="입력값">
+          <triggerUnit annotated="False">
+            <numeric name="value" value="1" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="큰 값으로 설정한다" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

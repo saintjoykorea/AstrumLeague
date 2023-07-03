@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="변신" annotated="False">
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="6176f48d-d762-4e38-a8ed-ffda90cabdc4" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" />
+        <tab name="transform" format="변형가능여부">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="회전" annotated="False">
+        <selection name="dir" value="0" />
+        <pointer name="ip1" destination="0" />
+      </triggerUnit>
+      <triggerUnit name="변신" annotated="False">
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="6176f48d-d762-4e38-a8ed-ffda90cabdc4" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" />
+        <tab name="transform" format="변형가능여부">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="수치비교" annotated="False">
+        <selection name="compare" value="남은 마나가 클 경우" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="100" reference="0c98ab26-4563-42bf-901f-270c28549ab9/5" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="수치조정" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="revise" value="마나를 제거한다" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="수치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="100" reference="0c98ab26-4563-42bf-901f-270c28549ab9/5" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <numeric name="time" value="0" />
+      </triggerUnit>
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="f09fc66e-f85c-4f1c-8997-36386ab42145" />
+        <tab name="time" format="시간적용">
+          <triggerUnit annotated="False">
+            <wrap name="time">
+              <triggerUnit annotated="False">
+                <tab name="value" format="입력값">
+                  <triggerUnit annotated="False">
+                    <numeric name="value" value="5" reference="1fd6f39e-5b4e-4b64-a532-107a0b33933a/34" />
+                  </triggerUnit>
+                </tab>
+              </triggerUnit>
+            </wrap>
+          </triggerUnit>
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="수치">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="변신" annotated="False">
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="6176f48d-d762-4e38-a8ed-ffda90cabdc4" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" />
+        <tab name="transform" format="변형">
+          <triggerUnit annotated="False">
+            <selection name="status" value="시작" />
+          </triggerUnit>
+        </tab>
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

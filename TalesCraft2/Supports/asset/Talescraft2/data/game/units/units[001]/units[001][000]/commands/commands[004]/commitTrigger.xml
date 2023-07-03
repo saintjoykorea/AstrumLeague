@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="건설여부" annotated="False">
+        <mask name="building" selection="목표건설" />
+        <pointer name="ip1" destination="2" />
+      </triggerUnit>
+      <triggerUnit name="커맨드없음" annotated="False" />
+      <triggerUnit name="선택제한" annotated="False">
+        <mask name="selection" selection="전체선택제한" />
+        <pointer name="ip1" destination="4" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+      <triggerUnit name="커맨드불가" annotated="False">
+        <asset name="message" selection="e7a8d2ec-efc2-4d0e-953e-2fa98c81284a" />
+        <selection name="announce" value="없음" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

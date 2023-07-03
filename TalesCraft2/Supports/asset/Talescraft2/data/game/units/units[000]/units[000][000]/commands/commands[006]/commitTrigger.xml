@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="유닛보유여부" annotated="False">
+        <asset name="unit" selection="5606c185-c6e4-4752-963e-c73f43857c0f" />
+        <selection name="alive" value="덱에 있는" />
+        <numeric name="count" value="1" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="선택제한" annotated="False">
+        <mask name="selection" selection="다중그룹제한,전체선택제한" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="버프여부" annotated="False">
+        <asset name="buff" selection="0f3879a1-84b3-42d4-aea9-423e69c644ec" />
+        <numeric name="stack" value="0" />
+        <pointer name="ip1" destination="4" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="영역버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <wrap name="range">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="1000" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="(O)" />
+            <list name="unit" />
+            <mask name="type" selection="본진" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="플레이어" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff">
+              <triggerUnit annotated="False">
+                <asset name="buff" selection="0f3879a1-84b3-42d4-aea9-423e69c644ec" />
+                <numeric name="stack" value="0" />
+                <selection name="buffed" value="(O)" />
+              </triggerUnit>
+            </list>
+          </triggerUnit>
+        </wrap>
+        <asset name="buff" selection="0f3879a1-84b3-42d4-aea9-423e69c644ec" />
+        <tab name="time" format="제거">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="0f3879a1-84b3-42d4-aea9-423e69c644ec" />
+        <tab name="time" format="시간무제한">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="단일 유닛" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

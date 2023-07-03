@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="08fb0543-31b4-41f4-817b-421eb92b1323" />
+        <pointer name="ip1" destination="4" />
+        <pointer name="ip2" />
+      </triggerUnit>
+      <triggerUnit name="수치비교" annotated="False">
+        <selection name="compare" value="남은 마나가 클 경우" />
+        <wrap name="value">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="100" reference="0c98ab26-4563-42bf-901f-270c28549ab9/5" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="건설커맨드" annotated="False">
+        <asset name="unit" selection="6176f48d-d762-4e38-a8ed-ffda90cabdc4" />
+        <selection name="targeting" value="변형" />
+        <tab name="process" format="실행가능">
+          <triggerUnit annotated="False" />
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="건설커맨드" annotated="False">
+        <asset name="unit" selection="6176f48d-d762-4e38-a8ed-ffda90cabdc4" />
+        <selection name="targeting" value="변형" />
+        <tab name="process" format="실행불가">
+          <triggerUnit annotated="False">
+            <asset name="message" selection="6764-635410416778775602-1636" />
+            <selection name="announce" value="마나부족" />
+          </triggerUnit>
+        </tab>
+      </triggerUnit>
+      <triggerUnit name="건설커맨드" annotated="False">
+        <asset name="unit" selection="6176f48d-d762-4e38-a8ed-ffda90cabdc4" />
+        <selection name="targeting" value="변형" />
+        <tab name="process" format="실행불가">
+          <triggerUnit annotated="False">
+            <asset name="message" selection="b8f3f687-f2b2-4846-9f36-90b9f200a595" />
+            <selection name="announce" value="없음" />
+          </triggerUnit>
+        </tab>
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

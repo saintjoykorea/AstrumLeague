@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-122" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="충돌" annotated="False">
+        <selection name="activation" value="비활성화" />
+      </triggerUnit>
+      <triggerUnit name="기본모션" annotated="False">
+        <selection name="baseMotion" value="파괴" />
+      </triggerUnit>
+      <triggerUnit name="룬보유여부" annotated="False">
+        <asset name="rune" selection="901ab62f-def2-4048-a7ae-f44f8aba86e1" />
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="생성" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="useResource" value="자원을 소비하지 않고" />
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="26ed96d8-eee8-4b28-983a-6f008be39968" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="생성" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <selection name="useResource" value="자원을 소비하지 않고" />
+        <list name="unit">
+          <triggerUnit annotated="False">
+            <asset name="unit" selection="26ed96d8-eee8-4b28-983a-6f008be39968" />
+          </triggerUnit>
+        </list>
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="대기" annotated="False">
+        <wrap name="time">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="4" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+        <selection name="target" value="타겟과 무관하게" />
+        <selection name="type" value="시간" />
+        <selection name="reserved" value="현재부터" />
+        <selection name="interrupt" value="중지" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

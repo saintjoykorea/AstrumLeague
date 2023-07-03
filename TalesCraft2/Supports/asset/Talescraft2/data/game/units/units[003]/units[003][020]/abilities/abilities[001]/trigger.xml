@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-119" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="타겟비교" annotated="False">
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="무관" />
+            <list name="unit" />
+            <mask name="type" selection="공중유닛,공중일꾼" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" destination="3" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="입력값">
+          <triggerUnit annotated="False">
+            <numeric name="value" value="27" reference="13128-636265063821166599-40974/9" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="설정한다" />
+      </triggerUnit>
+      <triggerUnit name="중지" annotated="False">
+        <pointer name="ip1" destination="5" />
+      </triggerUnit>
+      <triggerUnit name="타겟비교" annotated="False">
+        <wrap name="targetCondition">
+          <triggerUnit annotated="False">
+            <selection name="exclusion" value="포함" />
+            <selection name="alive" value="무관" />
+            <list name="unit" />
+            <mask name="type" selection="지하유닛,지하일꾼,지상유닛,지상일꾼,건물,타워,병영,광산,본진" />
+            <mask name="attribute" selection="" />
+            <mask name="attributeExclusion" selection="" />
+            <tab name="compare" format="비교없음">
+              <triggerUnit annotated="False" />
+            </tab>
+            <mask name="allience" selection="" />
+            <mask name="status" selection="" />
+            <mask name="building" selection="" />
+            <mask name="etc" selection="" />
+            <list name="buff" />
+          </triggerUnit>
+        </wrap>
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="입력값">
+          <triggerUnit annotated="False">
+            <numeric name="value" value="8" reference="13128-636265063821166599-40974/8" />
+          </triggerUnit>
+        </tab>
+        <tab name="valueOp" format="변화없음">
+          <triggerUnit annotated="False" />
+        </tab>
+        <selection name="combine" value="설정한다" />
+      </triggerUnit>
+      <triggerUnit name="수치설정" annotated="False">
+        <selection name="target" value="기존값" />
+        <tab name="value" format="기존값">
+          <triggerUnit annotated="False" />
+        </tab>
+        <tab name="valueOp" format="유닛레벨">
+          <triggerUnit annotated="False">
+            <numeric name="value0" value="0.06" reference="c3bb61cd-1ce2-43a0-b8f4-d6c7a662e424/1" />
+            <selection name="op" value="* 유닛레벨비율" />
+          </triggerUnit>
+        </tab>
+        <selection name="combine" value="설정한다" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

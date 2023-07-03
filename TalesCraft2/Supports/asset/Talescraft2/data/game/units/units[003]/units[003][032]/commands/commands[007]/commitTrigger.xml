@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<triggerAsset version="65">
+  <trigger dimension="1" format="9932-635399139943405123-121" members="">
+    <triggerUnitSet name="New 1">
+      <triggerUnit name="버프여부" annotated="False">
+        <asset name="buff" selection="c36315ef-e96c-4780-bf69-ac47521eacb6" />
+        <numeric name="stack" value="0" />
+        <pointer name="ip1" />
+      </triggerUnit>
+      <triggerUnit name="버프" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <asset name="buff" selection="c36315ef-e96c-4780-bf69-ac47521eacb6" />
+        <tab name="time" format="제거">
+          <triggerUnit annotated="False" />
+        </tab>
+        <wrap name="stack">
+          <triggerUnit annotated="False">
+            <tab name="value" format="입력값">
+              <triggerUnit annotated="False">
+                <numeric name="value" value="0" />
+              </triggerUnit>
+            </tab>
+          </triggerUnit>
+        </wrap>
+      </triggerUnit>
+      <triggerUnit name="사운드" annotated="False">
+        <selection name="toTarget" value="자신" />
+        <list name="sound">
+          <triggerUnit annotated="False">
+            <asset name="sound" selection="19aabfae-0376-44a6-9473-2ada021c2566" />
+          </triggerUnit>
+        </list>
+        <numeric name="volume" value="1" />
+        <selection name="essential" value="출력" />
+      </triggerUnit>
+      <triggerUnit name="커맨드실행" annotated="False">
+        <selection name="action" value="처리한다" />
+        <selection name="source" value="모든 유닛" />
+      </triggerUnit>
+    </triggerUnitSet>
+  </trigger>
+</triggerAsset>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animationAsset version="65" globalPositionIndex="0" globalStartPosition0="0,0,0" globalEndPosition0="364.9686,-479.8009,30.24789" globalStartPosition1="0,0,0" globalEndPosition1="0,0,0" globalStartPosition2="0,0,0" globalEndPosition2="0,0,0" color="1" gridSize="40" camera="30,100,100000,0,0,0,42,2000" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" ground="False">
+  <keys>
+    <key name="Position" value="1" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Scale" value="2" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 0" value="4" visible="True" layer="None" globalPosition="None" />
+    <key name="Direction 1" value="8" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 2" value="16" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 3" value="32" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 4" value="64" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 5" value="128" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 6" value="256" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 7" value="512" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 8" value="1024" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 9" value="2048" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 10" value="4096" visible="False" layer="None" globalPosition="None" />
+    <key name="Direction 11" value="8192" visible="False" layer="None" globalPosition="None" />
+    <key name="Bottom" value="16384" visible="True" layer="Bottom" globalPosition="None" />
+    <key name="Middle" value="32768" visible="True" layer="Middle" globalPosition="None" />
+    <key name="Top" value="65536" visible="True" layer="Top" globalPosition="None" />
+    <key name="Body" value="131072" visible="True" layer="None" globalPosition="Position1" />
+    <key name="Head" value="262144" visible="True" layer="None" globalPosition="Position1" />
+  </keys>
+  <backgrounds />
+  <animation name="arrow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+    <derivation type="Multi">
+      <animation name="middle-shoot" keys="Top,Body" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="False" pathSpeed="1500" pathDuration="0.4" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <sound sound="6648-636287441429765963-43526" volume="0.5" loop="0" latency="0" essential="False" />
+        <derivation type="Multi">
+          <animation name="arrow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Trail">
+              <trail color="0" gridSize="40" fov="30" imageRoot="20404-636359834738294453-41364" images="2ab936a9-fa99-47b7-bf28-8b39066c0651" material="1,1,1,1,0.2,6,0,0,0" blendMode="Add" billboard="True" repeat="False" repeatScroll="0" localSpace="False" minDistance="1" width="16" pointLife="0.1" imageInterval="0" imageLoop="0;False;False" colorRed="Constant;1,0" colorGreen="Constant;1,0" colorBlue="Constant;1,0" colorAlpha="Curve;0,1,0,0,0;0.7682119,1,0,0,0;1,0,0,0,0;1" colorFixedComponent="False" colorDuration="0.5" colorLoop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+          <animation name="wind" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Trail">
+              <trail color="1" gridSize="40" fov="30" imageRoot="5880-635778439199633209-164802" images="8928-636379023874203231-43237;8928-636379023874323238-43238;8928-636379023874423244-43239;8928-636379023874623255-43240;8928-636379023874733262-43241;8928-636379023874833267-43242;8928-636379023875073281-43243" material="1,1,1,1,0.2,6,0,0,0" blendMode="Add" billboard="True" repeat="False" repeatScroll="0" localSpace="False" minDistance="1" width="20" pointLife="0.4" imageInterval="0.05" imageLoop="0;False;False" colorRed="Constant;1,0" colorGreen="Constant;0.4295531,0" colorBlue="Constant;1,0" colorAlpha="Curve;0,0.6,0,0,0;1,0,0,-56.02707,-56.02707;1" colorFixedComponent="False" colorDuration="0.5" colorLoop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+          <animation name="Animation" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0" billboardOffset="False" pathLoop="0;False;False" reverse="False" facing="True" rotationFixedComponent="False" rotationDuration="0" rotationLoop="0;False;False" scaleX="Curve;0,1.5,0,-1.1,-1.1;1,0.4,0,0,0;100" scaleY="Curve;0,1.5,0,-1.1,-1.1;1,0.4,0,0,0;100" scaleZ="Curve;0,1.5,0,-1.1,-1.1;1,0.4,0,0,0;100" scaleFixedComponent="False" scaleDuration="0.5" scaleLoop="0;False;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="0;False;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Particle">
+              <particle color="1" gridSize="40" fov="30" shape="Sphere;0" shapeShell="False" life="0.5,0" emissionRate="15" emissionMax="10000" duration="0" latency="0" prewarm="False" descent="False" finish="False" clear="False" blendMode="Add" imageRoot="5880-635778439133169408-164793" images="2668-635787120523575722-171121" imageSequence="0" material="1,1,1,1,0.2,6,0,0,0" colorRed="Constant;0.3913043,0" colorGreen="Constant;0.7304348,0" colorAlpha="Curve;0,1,0,-35.31647,-35.31647;1,0,0,-56.39243,-56.39243;1" colorFixedComponent="False" rotationFixedComponent="True" scaleX="Curve;0,0,0,0.4132232,0.4132232;1,0.3,0,0,0;100" scaleY="Curve;0,0,0,0.4132232,0.4132232;1,0.3,0,0,0;100" scaleZ="Curve;0,0,0,0.4132232,0.4132232;1,0.3,0,0,0;100" scaleFixedComponent="True" view="None" stretchRate="0" localSpace="False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5025189,-0.5025189,0.7035264" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+        </derivation>
+      </animation>
+      <animation name="middle-brancha" keys="Top,Body" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="False" pathSpeed="1500" pathDuration="0.4" radial="Linear;-66,0,0,0" tangential="Curve;0,66,0,-0.5,-0.5;1,0,0,0,0;20000" tangentialAngle="90,0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <derivation type="Multi">
+          <animation name="arrow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0.2" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Trail">
+              <trail color="1" gridSize="40" fov="30" imageRoot="20404-636359834738294453-41364" images="3416-635941044277866059-103283" material="1,1,1,1,0.2,6,0,0,0" blendMode="Add" billboard="True" repeat="False" repeatScroll="0" localSpace="False" minDistance="1" width="6" pointLife="0.4" imageInterval="0" imageLoop="0;False;False" colorAlpha="Curve;0,0.4,0,0,0;0.8095239,0.4,0,-0.01370778,-0.01370778;1,0,0,-46.39719,-46.39719;1" colorFixedComponent="False" colorDuration="0.5" colorLoop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+        </derivation>
+      </animation>
+      <animation name="middle-branchb" keys="Top,Body" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="False" pathSpeed="1500" pathDuration="0.4" radial="Linear;-66,0,0,0" tangential="Curve;0,-66,0,0.5,0.5;1,0,0,0,0;20000" tangentialAngle="90,0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <derivation type="Multi">
+          <animation name="arrow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0.2" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Trail">
+              <trail color="0" gridSize="40" fov="30" imageRoot="20404-636359834738294453-41364" images="3416-635941044277866059-103283" material="1,1,1,1,0.2,6,0,0,0" blendMode="Add" billboard="True" repeat="False" repeatScroll="0" localSpace="False" minDistance="1" width="6" pointLife="0.4" imageInterval="0" imageLoop="0;False;False" colorAlpha="Curve;0,0.4,0,0,0;0.8095239,0.4,0,-0.01370778,-0.01370778;1,0,0,-46.39719,-46.39719;1" colorFixedComponent="False" colorDuration="0.5" colorLoop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+        </derivation>
+      </animation>
+      <animation name="middle-branchc" keys="Top,Body" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="False" pathSpeed="1500" pathDuration="0.4" radial="Linear;-88,0,0,0" tangential="Curve;0,44,0,-0.3,-0.3;1,0,0,0,0;20000" tangentialAngle="90,0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <derivation type="Multi">
+          <animation name="arrow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0.2" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Trail">
+              <trail color="0" gridSize="40" fov="30" imageRoot="20404-636359834738294453-41364" images="3416-635941044277866059-103283" material="1,1,1,1,0.2,6,0,0,0" blendMode="Add" billboard="True" repeat="False" repeatScroll="0" localSpace="False" minDistance="1" width="6" pointLife="0.4" imageInterval="0" imageLoop="0;False;False" colorAlpha="Curve;0,0.4,0,0,0;0.8095239,0.4,0,-0.01370778,-0.01370778;1,0,0,-46.39719,-46.39719;1" colorFixedComponent="False" colorDuration="0.5" colorLoop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+        </derivation>
+      </animation>
+      <animation name="middle-branchd" keys="Top,Body" weight="1" usingGlobalStartPosition="True" usingGlobalEndPosition="True" usingPathSpeed="False" pathSpeed="1500" pathDuration="0.4" radial="Linear;-66,0,0,0" tangential="Curve;0,-44,0,0.3,0.3;1,0,0,0,0;20000" tangentialAngle="90,0" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+        <derivation type="Multi">
+          <animation name="arrow" weight="1" usingGlobalStartPosition="False" usingGlobalEndPosition="False" usingPathSpeed="True" pathSpeed="0" pathDuration="0.2" billboardOffset="False" pathLoop="1;True;False" reverse="False" facing="False" rotationFixedComponent="False" rotationDuration="0" rotationLoop="1;True;False" scaleFixedComponent="False" scaleDuration="0" scaleLoop="1;True;False" rotationFirst="True" usingLight="False" usingDepth="False" depthMode="Read" depthBias="0" usingStencil="False" usingAlphaTest="False" alphaTestDuration="0" alphaTestLoop="1;True;False" duration="0" latency="0" derivationFinish="True" closing="False" isBuildChecked="True" localeVisible="True">
+            <substance type="Trail">
+              <trail color="0" gridSize="40" fov="30" imageRoot="20404-636359834738294453-41364" images="3416-635941044277866059-103283" material="1,1,1,1,0.2,6,0,0,0" blendMode="Add" billboard="True" repeat="False" repeatScroll="0" localSpace="False" minDistance="1" width="6" pointLife="0.4" imageInterval="0" imageLoop="0;False;False" colorAlpha="Curve;0,0.4,0,0,0;0.8095239,0.4,0,-0.01370778,-0.01370778;1,0,0,-46.39719,-46.39719;1" colorFixedComponent="False" colorDuration="0.5" colorLoop="1;True;False" usingLight="False" ambient="FFFFFFFF" light="0.5,1,1,1,-0.5773503,-0.5773503,0.5773503" />
+            </substance>
+            <derivation type="Multi" />
+          </animation>
+        </derivation>
+      </animation>
+    </derivation>
+  </animation>
+</animationAsset>
